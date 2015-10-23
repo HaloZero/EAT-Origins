@@ -1,41 +1,41 @@
- [
+[
   {
-  "original_friend": {
-  "name": "Dan Robertson",
-  "picture": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/11692804_10102870120287940_3640606862248388819_n.jpg?oh=3517defdda6484ca6d2199e64c6e017b&oe=568E633E"
-  },
-  "new_friend": {
-  "name": "Kristy Headley",
-  "picture": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/12004886_10103028337783810_4948962977310520121_n.jpg?oh=4da07741956a36a0616ef80a92d4f4fa&oe=5689B761"
-  },
-  "type": "College",
-  "story": "Knows Dan and Ryan through Ohio College. All moved to San Francisco",
-  "date": null
-  },
-  {
-  "original_friend": {
-  "name": "Kristy Headley",
-  "picture": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/12004886_10103028337783810_4948962977310520121_n.jpg?oh=4da07741956a36a0616ef80a92d4f4fa&oe=5689B761"
-  },
-  "new_friend": {
-  "name": "Ryan Ward",
-  "picture": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xaf1/t31.0-8/11947954_10102967902411780_9073843214159948414_o.jpg"
-  },
-  "type": "College",
-  "story": "Knows Dan and Ryan through Ohio College. All moved to San Francisco",
-  "date": null
+    "original_friend": {
+      "name": "Dan Robertson",
+      "picture": "https:\/\/scontent-sea1-1.xx.fbcdn.net\/hphotos-xta1\/v\/t1.0-9\/11692804_10102870120287940_3640606862248388819_n.jpg?oh=3517defdda6484ca6d2199e64c6e017b&oe=568E633E"
+    },
+    "new_friend": {
+      "name": "Kristy Headley",
+      "picture": "https:\/\/scontent-sea1-1.xx.fbcdn.net\/hphotos-xfp1\/v\/t1.0-9\/12004886_10103028337783810_4948962977310520121_n.jpg?oh=4da07741956a36a0616ef80a92d4f4fa&oe=5689B761"
+    },
+    "type": "College",
+    "story": "Knows Dan and Ryan through Ohio College. All moved to San Francisco",
+    "date": null
   },
   {
-  "original_friend": {
-  "name": "Ryan Ward",
-  "picture": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xaf1/t31.0-8/11947954_10102967902411780_9073843214159948414_o.jpg"
+    "original_friend": {
+      "name": "Kristy Headley",
+      "picture": "https:\/\/scontent-sea1-1.xx.fbcdn.net\/hphotos-xfp1\/v\/t1.0-9\/12004886_10103028337783810_4948962977310520121_n.jpg?oh=4da07741956a36a0616ef80a92d4f4fa&oe=5689B761"
+    },
+    "new_friend": {
+      "name": "Ryan Ward",
+      "picture": "https:\/\/scontent-sea1-1.xx.fbcdn.net\/hphotos-xaf1\/t31.0-8\/11947954_10102967902411780_9073843214159948414_o.jpg"
+    },
+    "type": "College",
+    "story": "Knows Dan and Ryan through Ohio College. All moved to San Francisco",
+    "date": null
   },
-  "new_friend": {
-  "name": "Sam Haynor",
-  "picture": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xaf1/t31.0-8/11947954_10102967902411780_9073843214159948414_o.jpg"
-  },
-  "type": "Dodgeball",
-  "story": "Met everybody at Dodgeball long ago in 2nd season",
-  "date": null
+  {
+    "original_friend": {
+      "name": "Ryan Ward",
+      "picture": "https:\/\/scontent-sea1-1.xx.fbcdn.net\/hphotos-xaf1\/t31.0-8\/11947954_10102967902411780_9073843214159948414_o.jpg"
+    },
+    "new_friend": {
+      "name": "Sam Haynor",
+      "picture": "https:\/\/scontent-sea1-1.xx.fbcdn.net\/hphotos-xaf1\/t31.0-8\/11947954_10102967902411780_9073843214159948414_o.jpg"
+    },
+    "type": "Dodgeball",
+    "story": "Met everybody at Dodgeball long ago in 2nd season",
+    "date": null
   }
-  ]
+]

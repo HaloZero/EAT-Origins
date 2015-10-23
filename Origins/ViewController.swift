@@ -8,6 +8,7 @@
 
 import UIKit
 import AlamofireImage
+import SwiftyJSON
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -32,14 +33,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableView.dataSource = self
         self.tableView.estimatedRowHeight = 100;
         self.tableView.rowHeight = UITableViewAutomaticDimension;
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.friendships.count;
@@ -48,16 +42,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell : FriendshipTableViewCell =
         self.tableView.dequeueReusableCellWithIdentifier("FriendshipCell", forIndexPath: indexPath) as! FriendshipTableViewCell
+
+        let friendShip: JSON = JSON(self.friendships[indexPath.row])
+        let originalFriend: JSON = JSON(friendShip["original_friend"].dictionaryValue)
+        let newFriend: JSON = JSON(friendShip["new_friend"].dictionaryValue)
+        cell.storyLabel.text = friendShip["story"].stringValue
+
+        let roundedFilter: ImageFilter = RoundedCornersFilter(radius: cell.friendshipConnection.frame.size.height);
+
+        cell.friendshipConnection.af_setImageWithURL(NSURL(string: originalFriend["picture"].stringValue)!, filter: roundedFilter)
+        cell.newFriend.af_setImageWithURL(NSURL(string: newFriend["picture"].stringValue)!, placeholderImage: nil, filter: roundedFilter)
+
+        cell.originalFriendName.text = originalFriend["name"].string;
+        cell.newFriendName.text = newFriend["name"].string;
+        cell.linkLine.backgroundColor = UIColor.greenColor();
+        cell.friendshipTypeImageView.image = UIImage(named: friendShip["type"].stringValue.lowercaseString);
+        if (cell.friendshipTypeImageView.image != nil) {
+            cell.friendshipTypeImageView.backgroundColor = UIColor.whiteColor();
+        }
         
-
-        var friendShip: Dictionary<String, AnyObject> = self.friendships[indexPath.row] as! Dictionary<String, AnyObject>
-
-        var originalFriend: Dictionary<String, AnyObject> = friendShip["original_friend"] as! Dictionary<String, AnyObject>
-        var newFriend: Dictionary<String, AnyObject> = friendShip["new_friend"] as! Dictionary<String, AnyObject>
-        cell.storyLabel.text = friendShip["story"] as? String;
-        cell.friendshipConnection.af_setImageWithURL(NSURL(string: originalFriend["picture"] as! String)!);
-        cell.newFriend.af_setImageWithURL(NSURL(string: newFriend["picture"] as! String)!);
-
         return cell;
 
     }
