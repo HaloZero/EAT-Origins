@@ -1,41 +1,905 @@
 [
   {
-    "original_friend": {
+    "new_friend": {
       "name": "Dan Robertson",
-      "picture": "https:\/\/scontent-sea1-1.xx.fbcdn.net\/hphotos-xta1\/v\/t1.0-9\/11692804_10102870120287940_3640606862248388819_n.jpg?oh=3517defdda6484ca6d2199e64c6e017b&oe=568E633E"
+      "picture": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/11692804_10102870120287940_3640606862248388819_n.jpg?oh=3517defdda6484ca6d2199e64c6e017b&oe=568E633E"
     },
-    "new_friend": {
-      "name": "Kristy Headley",
-      "picture": "https:\/\/scontent-sea1-1.xx.fbcdn.net\/hphotos-xfp1\/v\/t1.0-9\/12004886_10103028337783810_4948962977310520121_n.jpg?oh=4da07741956a36a0616ef80a92d4f4fa&oe=5689B761"
-    },
-    "type": "College",
-    "story": "Knows Dan and Ryan through Ohio College. All moved to San Francisco",
-    "date": null
-  },
-  {
     "original_friend": {
       "name": "Kristy Headley",
-      "picture": "https:\/\/scontent-sea1-1.xx.fbcdn.net\/hphotos-xfp1\/v\/t1.0-9\/12004886_10103028337783810_4948962977310520121_n.jpg?oh=4da07741956a36a0616ef80a92d4f4fa&oe=5689B761"
-    },
-    "new_friend": {
-      "name": "Ryan Ward",
-      "picture": "https:\/\/scontent-sea1-1.xx.fbcdn.net\/hphotos-xaf1\/t31.0-8\/11947954_10102967902411780_9073843214159948414_o.jpg"
+      "picture": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/12004886_10103028337783810_4948962977310520121_n.jpg?oh=4da07741956a36a0616ef80a92d4f4fa&oe=5689B761"
     },
     "type": "College",
-    "story": "Knows Dan and Ryan through Ohio College. All moved to San Francisco",
-    "date": null
+    "story": "Knows Kristy through Ohio College. All moved to San Francisco around the same time"
   },
   {
+    "new_friend": {
+      "name": "Kristy Headley",
+      "picture": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/12004886_10103028337783810_4948962977310520121_n.jpg?oh=4da07741956a36a0616ef80a92d4f4fa&oe=5689B761"
+    },
     "original_friend": {
       "name": "Ryan Ward",
-      "picture": "https:\/\/scontent-sea1-1.xx.fbcdn.net\/hphotos-xaf1\/t31.0-8\/11947954_10102967902411780_9073843214159948414_o.jpg"
+      "picture": null
     },
+    "type": "College",
+    "story": "Knows Ryan through Ohio College. All moved to San Francisco around the same time"
+  },
+  {
     "new_friend": {
       "name": "Sam Haynor",
-      "picture": "https:\/\/scontent-sea1-1.xx.fbcdn.net\/hphotos-xaf1\/t31.0-8\/11947954_10102967902411780_9073843214159948414_o.jpg"
+      "picture": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xaf1/t31.0-8/11947954_10102967902411780_9073843214159948414_o.jpg"
+    },
+    "original_friend": {
+      "name": "WDS Dodgeball",
+      "picture": "http://static.tumblr.com/9f373f449ae770e85b8b0e5f60341e3c/g538qsa/rMQnjzx8b/tumblr_static_35o06wrez3ggw88gg8s0w0wc4.jpg"
     },
     "type": "Dodgeball",
-    "story": "Met everybody at Dodgeball long ago in 2nd season",
-    "date": null
+    "story": "World Dodgeball Society Season 2"
+  },
+  {
+    "new_friend": {
+      "name": "Ben Haynor",
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xap1/t31.0-8/11194448_10100206383373795_1542944787390321129_o.jpg"
+    },
+    "original_friend": {
+      "name": "Sam Haynor",
+      "picture": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xaf1/t31.0-8/11947954_10102967902411780_9073843214159948414_o.jpg"
+    },
+    "type": "Family",
+    "story": "Brothers. Met people in EAT through Sam"
+  },
+  {
+    "new_friend": {
+      "name": "David Selassie",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xap1/v/t1.0-9/1380508_674211168442_1307771794_n.jpg?oh=e7b622b94ad58ed019abaac2eeff84bd&oe=56D0D4EC"
+    },
+    "original_friend": {
+      "name": "Ben Haynor",
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xap1/t31.0-8/11194448_10100206383373795_1542944787390321129_o.jpg"
+    },
+    "type": "College",
+    "story": "Friends with Ben through undergrad, which lead to becoming friends with Sam Haynor, which then lead to attending dodgeball"
+  },
+  {
+    "new_friend": {
+      "name": "Amber Lamason",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xap1/v/t1.0-9/1522053_10153640490795026_1256032116_n.jpg?oh=81b903efb636675f6300787e7d8c1745&oe=56CED19F"
+    },
+    "original_friend": {
+      "name": "David Selassie",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xap1/v/t1.0-9/1380508_674211168442_1307771794_n.jpg?oh=e7b622b94ad58ed019abaac2eeff84bd&oe=56D0D4EC"
+    },
+    "type": "Romantic",
+    "story": "Met through OkCupid, and got introduced to Dodgeball"
+  },
+  {
+    "new_friend": {
+      "name": "Mustafa Khan",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xpa1/v/t1.0-9/12003927_10100867892563189_5466112301460728031_n.jpg?oh=6d37b6f2bf0667624e124f50be5b03cd&oe=5686D880"
+    },
+    "original_friend": {
+      "name": "Dan Robertson",
+      "picture": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/11692804_10102870120287940_3640606862248388819_n.jpg?oh=3517defdda6484ca6d2199e64c6e017b&oe=568E633E"
+    },
+    "type": "Work",
+    "story": "Dan and Mustafa worked together at Facebook, got to know people after meeting Amber at a party. Participated in Dodgeball Season 1 by seeing a sign."
+  },
+  {
+    "new_friend": {
+      "name": "Nina Gaimes",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-prn2/v/t1.0-9/10882380_10100140127251595_2423340591744535261_n.jpg?oh=c0d6af8787d27f1ba9aec9576cd5cffd&oe=56B5A6A0"
+    },
+    "original_friend": {
+      "name": "Amber Lamason",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xap1/v/t1.0-9/1522053_10153640490795026_1256032116_n.jpg?oh=81b903efb636675f6300787e7d8c1745&oe=56CED19F"
+    },
+    "type": "Party",
+    "story": "Met Amber and David at a party of David's neighbor, hit it off with brunch."
+  },
+  {
+    "new_friend": {
+      "name": "Derrick Huhn",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "WDS Dodgeball",
+      "picture": "http://static.tumblr.com/9f373f449ae770e85b8b0e5f60341e3c/g538qsa/rMQnjzx8b/tumblr_static_35o06wrez3ggw88gg8s0w0wc4.jpg"
+    },
+    "type": "Dodgeball",
+    "story": "Derek attended WDS season 2. Doesn't remember how he got there."
+  },
+  {
+    "new_friend": {
+      "name": "Heather S",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Amber Lamason",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xap1/v/t1.0-9/1522053_10153640490795026_1256032116_n.jpg?oh=81b903efb636675f6300787e7d8c1745&oe=56CED19F"
+    },
+    "type": "College",
+    "story": "Attended graduate school with Amber. Amber got her to attend dodgeball"
+  },
+  {
+    "new_friend": {
+      "name": "T2",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Sam Haynor",
+      "picture": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xaf1/t31.0-8/11947954_10102967902411780_9073843214159948414_o.jpg"
+    },
+    "type": "Ultimate Frisbee",
+    "story": "Met Sam Haynor through Frisbee and played Dodgeball"
+  },
+  {
+    "new_friend": {
+      "name": "Adi Kamdar",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xpa1/v/t1.0-9/1476203_690033817695791_1484823368_n.jpg?oh=84aeb6b9331788836be8e1c312c73780&oe=56C42587"
+    },
+    "original_friend": {
+      "name": "Parker Phinney",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xap1/v/t1.0-9/188963_4932633988015_1698962960_n.jpg?oh=a3d5a94479221f86567010d45b8ac359&oe=56C6F59E"
+    },
+    "type": "Friends",
+    "story": "Met Adi in 6th Grade and were roommates in San Francisco"
+  },
+  {
+    "new_friend": {
+      "name": "Cole Ott",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Parker Phinney",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xap1/v/t1.0-9/188963_4932633988015_1698962960_n.jpg?oh=a3d5a94479221f86567010d45b8ac359&oe=56C6F59E"
+    },
+    "type": "College",
+    "story": "Cole Attended Darthmouth, with Parker"
+  },
+  {
+    "new_friend": {
+      "name": "Parker Phinney",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xap1/v/t1.0-9/188963_4932633988015_1698962960_n.jpg?oh=a3d5a94479221f86567010d45b8ac359&oe=56C6F59E"
+    },
+    "original_friend": {
+      "name": "Sam Haynor",
+      "picture": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xaf1/t31.0-8/11947954_10102967902411780_9073843214159948414_o.jpg"
+    },
+    "type": "College",
+    "story": "Friend of Parker's plays in Los Angeles in WDS and joined the SF League"
+  },
+  {
+    "new_friend": {
+      "name": "Stanley Chan",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xpa1/v/t1.0-9/1461048_10100686547496337_1231782806_n.jpg?oh=10d5cc8ecbf0e4486b223058da31f7c0&oe=56B648EC"
+    },
+    "original_friend": {
+      "name": "Parker Phinney",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xap1/v/t1.0-9/188963_4932633988015_1698962960_n.jpg?oh=a3d5a94479221f86567010d45b8ac359&oe=56C6F59E"
+    },
+    "type": "Work",
+    "story": "Worked with Parker and came to dodgeball"
+  },
+  {
+    "new_friend": {
+      "name": "Hannah Shulman",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Sam Haynor",
+      "picture": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xaf1/t31.0-8/11947954_10102967902411780_9073843214159948414_o.jpg"
+    },
+    "type": "Romantic",
+    "story": "Old camp friends with Sam Haynor but started dating sometime in the past"
+  },
+  {
+    "new_friend": {
+      "name": "Shandy Brown",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "WDS Dodgeball",
+      "picture": "http://static.tumblr.com/9f373f449ae770e85b8b0e5f60341e3c/g538qsa/rMQnjzx8b/tumblr_static_35o06wrez3ggw88gg8s0w0wc4.jpg"
+    },
+    "type": "Dodgeball",
+    "story": "Heard about Dodgeball through a website and came to be silly"
+  },
+  {
+    "new_friend": {
+      "name": "Jay Woodley",
+      "picture": null
+    },
+    "original_friend": null,
+    "type": "Work",
+    "story": "Jay and Rob both do Audio Visual for work. Met through work. According to Jay- someone at Parks and Recs informed Jay about dodgeball and he just attended"
+  },
+  {
+    "new_friend": {
+      "name": "Joseph Yamada",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xpt1/v/t1.0-9/1506605_827113640771_1561074385146699282_n.jpg?oh=e7aa88ca664b949fb3ee67bcc250a2f8&oe=56C3EFB0"
+    },
+    "original_friend": {
+      "name": "Marquis Marc",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xpf1/v/t1.0-9/1606980_10102293090540033_1773250936_n.jpg?oh=97ab5a6d0b07e9506fe98b66e19f951f&oe=56C3CC91"
+    },
+    "type": "Friends",
+    "story": "Met watching a football game in their apartment complex and was invited to Dodgeball"
+  },
+  {
+    "new_friend": {
+      "name": "Dennis McNulty",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Dan Robertson",
+      "picture": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/11692804_10102870120287940_3640606862248388819_n.jpg?oh=3517defdda6484ca6d2199e64c6e017b&oe=568E633E"
+    },
+    "type": "Dodgeball",
+    "story": "He originated the league we all played in and was dan's next door neighbor."
+  },
+  {
+    "new_friend": {
+      "name": "Laura Ray",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xpa1/v/t1.0-9/1017413_10103010975971823_4568797024716710343_n.jpg?oh=0897dc5f77c32f753b29f6f8f1220dd3&oe=56BD094A"
+    },
+    "original_friend": {
+      "name": "David Selassie",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xap1/v/t1.0-9/1380508_674211168442_1307771794_n.jpg?oh=e7b622b94ad58ed019abaac2eeff84bd&oe=56D0D4EC"
+    },
+    "type": "Random",
+    "story": "Selassie interviewed for a roommate position at Laura's house, didn't get it but became friends."
+  },
+  {
+    "new_friend": {
+      "name": "Lucy Conklin",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xaf1/v/t1.0-9/10363619_951078395045_8253708533609425586_n.jpg?oh=9ea3e0c2e4f4eb55c08aa8fb87bb2098&oe=56D14FEF"
+    },
+    "original_friend": {
+      "name": "Amber Lamason",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xap1/v/t1.0-9/1522053_10153640490795026_1256032116_n.jpg?oh=81b903efb636675f6300787e7d8c1745&oe=56CED19F"
+    },
+    "type": "Random",
+    "story": "Met at a Midnight Mystery Ride and was invited out to Brunch"
+  },
+  {
+    "new_friend": {
+      "name": "Mark Pollard",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Dan Robertson",
+      "picture": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/11692804_10102870120287940_3640606862248388819_n.jpg?oh=3517defdda6484ca6d2199e64c6e017b&oe=568E633E"
+    },
+    "type": "Work",
+    "story": "I had invited him to a party before we even hired him at FB.  A good dude right away."
+  },
+  {
+    "new_friend": {
+      "name": "Allison Shiman",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xfa1/v/t1.0-9/10418151_10205352251518566_3636200138088300845_n.jpg?oh=cf6a21e6e23216c1a40679003072dd8d&oe=56C2797B"
+    },
+    "original_friend": {
+      "name": "WDS Dodgeball",
+      "picture": "http://static.tumblr.com/9f373f449ae770e85b8b0e5f60341e3c/g538qsa/rMQnjzx8b/tumblr_static_35o06wrez3ggw88gg8s0w0wc4.jpg"
+    },
+    "type": "Dodgeball",
+    "story": "Was walking Bandit and saw people playing in the park and joined in"
+  },
+  {
+    "new_friend": {
+      "name": "Dairien Boyd",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xpt1/v/t1.0-9/11218060_893812833988062_1621394487479091507_n.jpg?oh=d058e92cd290aa3344d2aefab8a77e77&oe=56BB3020"
+    },
+    "original_friend": {
+      "name": "WDS Dodgeball",
+      "picture": "http://static.tumblr.com/9f373f449ae770e85b8b0e5f60341e3c/g538qsa/rMQnjzx8b/tumblr_static_35o06wrez3ggw88gg8s0w0wc4.jpg"
+    },
+    "type": "Dodgeball",
+    "story": "Was walking Bandit and saw people playing in the park and joined in"
+  },
+  {
+    "new_friend": {
+      "name": "Tony Vongprachanh",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "WDS Dodgeball",
+      "picture": "http://static.tumblr.com/9f373f449ae770e85b8b0e5f60341e3c/g538qsa/rMQnjzx8b/tumblr_static_35o06wrez3ggw88gg8s0w0wc4.jpg"
+    },
+    "type": "Dodgeball",
+    "story": null
+  },
+  {
+    "new_friend": {
+      "name": "Loreno Reyna",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Kristian Hansen",
+      "picture": null
+    },
+    "type": "The wedding",
+    "story": "Lorenzo was Kristian's roomate.  Lorenzo attended some EAT events and dodgeball through Kristian."
+  },
+  {
+    "new_friend": {
+      "name": "Erica Warren",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xap1/v/t1.0-9/1379340_171544746376309_442571888_n.jpg?oh=7df47761fab218d7a7efc66296001474&oe=56B52202"
+    },
+    "original_friend": {
+      "name": "Hannah Shulman",
+      "picture": null
+    },
+    "type": "Ultimate Frisbee",
+    "story": "Friends with Sam Haynor for Ultimate Frisbee and was invited by T2 to Dodgeball"
+  },
+  {
+    "new_friend": {
+      "name": "Jillian Corey",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xaf1/v/t1.0-9/11255261_10152734301557554_8813830433032581145_n.jpg?oh=7d333772ad5524b9de1f5063db37dccb&oe=56B48ACA"
+    },
+    "original_friend": {
+      "name": "Nina Gaimes",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-prn2/v/t1.0-9/10882380_10100140127251595_2423340591744535261_n.jpg?oh=c0d6af8787d27f1ba9aec9576cd5cffd&oe=56B5A6A0"
+    },
+    "type": "Friends",
+    "story": "Nina and Jill were friends.  Got introduced to Dan and then EAT because she was attending the Bacholrette party/ Nina's potluck in which Dan was the stripper."
+  },
+  {
+    "new_friend": {
+      "name": "Mel Lo",
+      "picture": null
+    },
+    "original_friend": null,
+    "type": "Friends",
+    "story": "Amber and Kristy met Melissa and her sister at a Mustafa Party."
+  },
+  {
+    "new_friend": {
+      "name": "Christina Mitchell",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Joseph Yamada",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xpt1/v/t1.0-9/1506605_827113640771_1561074385146699282_n.jpg?oh=e7aa88ca664b949fb3ee67bcc250a2f8&oe=56C3EFB0"
+    },
+    "type": "Random",
+    "story": "Met Joseph and Mark at a bus stop and was invited to ?"
+  },
+  {
+    "new_friend": {
+      "name": "Becky Doles",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Tyler Griffis",
+      "picture": null
+    },
+    "type": "College",
+    "story": "Becky took a class in college that Tyler taught. They later dated."
+  },
+  {
+    "new_friend": {
+      "name": "Alex Shulman",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Hannah Shulman",
+      "picture": null
+    },
+    "type": "Family",
+    "story": "Moved to San Francisco after college"
+  },
+  {
+    "new_friend": {
+      "name": "Melody ",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xfp1/v/t1.0-9/10468656_735109323191748_25212886065513143_n.jpg?oh=c2688c6c119e378001004be5f09ddf5b&oe=56CBDE59"
+    },
+    "original_friend": {
+      "name": "WDS Dodgeball",
+      "picture": "http://static.tumblr.com/9f373f449ae770e85b8b0e5f60341e3c/g538qsa/rMQnjzx8b/tumblr_static_35o06wrez3ggw88gg8s0w0wc4.jpg"
+    },
+    "type": "Dodgeball",
+    "story": "Did WDS down in Los Angeles and joined the league in San Francisco"
+  },
+  {
+    "new_friend": {
+      "name": "Kim Westberry",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Sam Haynor",
+      "picture": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xaf1/t31.0-8/11947954_10102967902411780_9073843214159948414_o.jpg"
+    },
+    "type": "Work",
+    "story": "Worked with Sam Haynor at Mission Science Workshop"
+  },
+  {
+    "new_friend": {
+      "name": "Ian Boldon",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xap1/v/t1.0-9/1526630_632222283480453_1482917902_n.jpg?oh=33f9eaf552cc18d415eb5edaa4710bbe&oe=56875CF4"
+    },
+    "original_friend": {
+      "name": "WDS Dodgeball",
+      "picture": "http://static.tumblr.com/9f373f449ae770e85b8b0e5f60341e3c/g538qsa/rMQnjzx8b/tumblr_static_35o06wrez3ggw88gg8s0w0wc4.jpg"
+    },
+    "type": "Dodgeball",
+    "story": "Brother did dodgeball and came to a game"
+  },
+  {
+    "new_friend": {
+      "name": "Chris Brenton",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "WDS Dodgeball",
+      "picture": "http://static.tumblr.com/9f373f449ae770e85b8b0e5f60341e3c/g538qsa/rMQnjzx8b/tumblr_static_35o06wrez3ggw88gg8s0w0wc4.jpg"
+    },
+    "type": "Dodgeball",
+    "story": "Chris had been playing dodgeball, but joined us for one of our monday night fun nights and we all ended up at a diner really late talking and eating.  He's been with us ever since."
+  },
+  {
+    "new_friend": {
+      "name": "Bryan Hermannson",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Jillian Corey",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xaf1/v/t1.0-9/11255261_10152734301557554_8813830433032581145_n.jpg?oh=7d333772ad5524b9de1f5063db37dccb&oe=56B48ACA"
+    },
+    "type": "College",
+    "story": "Friend and brewer that likes to party"
+  },
+  {
+    "new_friend": {
+      "name": "John Hanrahan",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xap1/v/t1.0-0/p206x206/11988730_10104605850645193_5783089923520529645_n.jpg?oh=2ed59153f47a4dd2754a8fbd7a3bb7b1&oe=56C75248"
+    },
+    "original_friend": {
+      "name": "Hilary Jenkins",
+      "picture": null
+    },
+    "type": "Friend",
+    "story": "Knows Hilary Jenkins and came to a Sunday Funday that Shandy hosted. How knows hilary?"
+  },
+  {
+    "new_friend": {
+      "name": "Rohan Dhaimade",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xpa1/v/t1.0-9/11173347_10104160930194343_5875686170251863970_n.jpg?oh=0db9ec019a2cce79a237d60c7461fc8e&oe=56D25BD0"
+    },
+    "original_friend": {
+      "name": "Amber Lamason",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xap1/v/t1.0-9/1522053_10153640490795026_1256032116_n.jpg?oh=81b903efb636675f6300787e7d8c1745&oe=56CED19F"
+    },
+    "type": "Friend",
+    "story": "Went to a bar event a friend was throwing and met Amber and Kristy. Amber and Kristy went to the bar because of Mustafa"
+  },
+  {
+    "new_friend": {
+      "name": "Glen Rhodes",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Derrick Huhn",
+      "picture": null
+    },
+    "type": "Work",
+    "story": "Derrik and Glen both worked at Apple"
+  },
+  {
+    "new_friend": {
+      "name": "Denise Olivera",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Dennis McNulty",
+      "picture": null
+    },
+    "type": "Dodgeball",
+    "story": "Co-ran the original dodgeball league with Dennis McNulty"
+  },
+  {
+    "new_friend": {
+      "name": "Vivek Potana",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "WDS Dodgeball",
+      "picture": "http://static.tumblr.com/9f373f449ae770e85b8b0e5f60341e3c/g538qsa/rMQnjzx8b/tumblr_static_35o06wrez3ggw88gg8s0w0wc4.jpg"
+    },
+    "type": "Dodgeball",
+    "story": null
+  },
+  {
+    "new_friend": {
+      "name": "Dom Majofski",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xfa1/v/t1.0-9/10358146_10152534906966047_5711852779617024409_n.jpg?oh=405fd1e316c76bacac5ea6cba599e4ca&oe=56C3E21F"
+    },
+    "original_friend": {
+      "name": "Christina Mitchell",
+      "picture": null
+    },
+    "type": "Work",
+    "story": "Coworker of Christina through One King Lane, came to dodgeball"
+  },
+  {
+    "new_friend": {
+      "name": "Jared Klein",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xtf1/v/t1.0-9/11693885_774259471490_2668131807726434493_n.jpg?oh=63f0c2ae9e693cd3a5bf2d46c066c52c&oe=56B23181"
+    },
+    "original_friend": {
+      "name": "Melody ",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xfp1/v/t1.0-9/10468656_735109323191748_25212886065513143_n.jpg?oh=c2688c6c119e378001004be5f09ddf5b&oe=56CBDE59"
+    },
+    "type": "Random",
+    "story": "Met Melody at Improv class and came to dodgeball"
+  },
+  {
+    "new_friend": {
+      "name": "Hilary Jenkins",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Shandy Brown",
+      "picture": null
+    },
+    "type": "Games",
+    "story": "Met Hilary at a board games at Taqueira San Jose and invited her out"
+  },
+  {
+    "new_friend": {
+      "name": "Jeffrey Schwinghammer",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xfa1/v/t1.0-9/18900_10100194334874085_7667129124130173970_n.jpg?oh=83a788950cf49a0507b765ffe03577ac&oe=56C43C77"
+    },
+    "original_friend": {
+      "name": "Lucy Conklin",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xaf1/v/t1.0-9/10363619_951078395045_8253708533609425586_n.jpg?oh=9ea3e0c2e4f4eb55c08aa8fb87bb2098&oe=56D14FEF"
+    },
+    "type": "Romantic",
+    "story": "OkCupid relationship with Lucy Conklin"
+  },
+  {
+    "new_friend": {
+      "name": "Erica Megan Hurst",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Shandy Brown",
+      "picture": null
+    },
+    "type": "Friend",
+    "story": "Knows Shandy because she had a mutual friend with Shandy named Annie"
+  },
+  {
+    "new_friend": {
+      "name": "Greg Goglin",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Erica Megan Hurst",
+      "picture": null
+    },
+    "type": "Romantic",
+    "story": "OkCupid relatinship with Erica, met most others at Burning Man"
+  },
+  {
+    "new_friend": {
+      "name": "Unni Von Feilitzen",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-frc3/v/t1.0-9/1800190_10154012940515398_6144786807160680952_n.jpg?oh=8e7086901551d5ae71858919b0363b19&oe=56CFBF79"
+    },
+    "original_friend": {
+      "name": "Mark Pollard",
+      "picture": null
+    },
+    "type": "Friend",
+    "story": "Moved here from Sweden and came to see Moonrise Kingdom. Mututal friend with Mark Pollard down in Los Angeles"
+  },
+  {
+    "new_friend": {
+      "name": "Alan Mayer",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xap1/v/t1.0-9/22008_10101787505022658_6419471490869282711_n.jpg?oh=2ffa8a1386c1dffc2a0c671cde9191e0&oe=5687BAE0"
+    },
+    "original_friend": {
+      "name": "Jared Klein",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xtf1/v/t1.0-9/11693885_774259471490_2668131807726434493_n.jpg?oh=63f0c2ae9e693cd3a5bf2d46c066c52c&oe=56B23181"
+    },
+    "type": "Games",
+    "story": "Met Jared at Kickball long ago and came out to dodgeball"
+  },
+  {
+    "new_friend": {
+      "name": "Mayling Chung",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xpt1/v/t1.0-9/12088554_10207048545628304_5871657889710472826_n.jpg?oh=a87de847b88f8b171aa95a593f34240e&oe=56D0BCC5"
+    },
+    "original_friend": {
+      "name": "Rohan Dhaimade",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xpa1/v/t1.0-9/11173347_10104160930194343_5875686170251863970_n.jpg?oh=0db9ec019a2cce79a237d60c7461fc8e&oe=56D25BD0"
+    },
+    "type": "Dodgeball",
+    "story": "Heard about Dodgeball through Rohan at an event thorugh Utah, knows others through Camp Grounded"
+  },
+  {
+    "new_friend": {
+      "name": "Jeff Ham",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xpa1/t31.0-8/s960x960/12182838_10102419082241609_2181877040423636282_o.jpg"
+    },
+    "original_friend": {
+      "name": "Dan Robertson",
+      "picture": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/11692804_10102870120287940_3640606862248388819_n.jpg?oh=3517defdda6484ca6d2199e64c6e017b&oe=568E633E"
+    },
+    "type": "Random",
+    "story": "Met on the street and played dodgeball"
+  },
+  {
+    "new_friend": {
+      "name": "Kyle Patrick",
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xpf1/t31.0-8/11888650_934091803322542_2011110804797657911_o.jpg"
+    },
+    "original_friend": {
+      "name": "WDS Dodgeball",
+      "picture": "http://static.tumblr.com/9f373f449ae770e85b8b0e5f60341e3c/g538qsa/rMQnjzx8b/tumblr_static_35o06wrez3ggw88gg8s0w0wc4.jpg"
+    },
+    "type": "Dodgeball",
+    "story": "Joined the WDS League (was he also part of LA?)"
+  },
+  {
+    "new_friend": {
+      "name": "Amy Lam",
+      "picture": null
+    },
+    "original_friend": null,
+    "type": "Dodgeball",
+    "story": "She was a dodgeballer down in LA and found us when she moved up"
+  },
+  {
+    "new_friend": {
+      "name": "Max Feldman",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xat1/v/t1.0-9/1157532_688885461163491_1103286837_n.jpg?oh=8fc64d8d6e26d364bb5b720fb7ed9b73&oe=56CBD301"
+    },
+    "original_friend": {
+      "name": "Kyle Patrick",
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xpf1/t31.0-8/11888650_934091803322542_2011110804797657911_o.jpg"
+    },
+    "type": "Work",
+    "story": "Knows Kyle Patrick from Salesforce Orientation and got invited to dodgeball"
+  },
+  {
+    "new_friend": {
+      "name": "Michael Ashkar",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xaf1/v/t1.0-9/11221532_10100674508172087_7391534776952087352_n.jpg?oh=911c77004180e97ee685d53e1499ffd5&oe=56D01BD4"
+    },
+    "original_friend": {
+      "name": "Amber Lamason",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xap1/v/t1.0-9/1522053_10153640490795026_1256032116_n.jpg?oh=81b903efb636675f6300787e7d8c1745&oe=56CED19F"
+    },
+    "type": "Romantic",
+    "story": "OkCupid Date"
+  },
+  {
+    "new_friend": {
+      "name": "Timoty Loui",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "WDS Dodgeball",
+      "picture": "http://static.tumblr.com/9f373f449ae770e85b8b0e5f60341e3c/g538qsa/rMQnjzx8b/tumblr_static_35o06wrez3ggw88gg8s0w0wc4.jpg"
+    },
+    "type": "Dodgeball",
+    "story": "He was part of Wu Chan clan, and part of Dodgeball as long as any of us were there."
+  },
+  {
+    "new_friend": {
+      "name": "Kevin Baker",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xpt1/v/t1.0-9/11949142_829213577777_7421899032782583411_n.jpg?oh=119009375c63d0728158b8e9b7a58537&oe=56CC7FB2"
+    },
+    "original_friend": {
+      "name": "Rohan Dhaimade",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xpa1/v/t1.0-9/11173347_10104160930194343_5875686170251863970_n.jpg?oh=0db9ec019a2cce79a237d60c7461fc8e&oe=56D25BD0"
+    },
+    "type": "Random",
+    "story": "Friend of Rohan, saw him playing Painted Twister. Came into EAT after being invited to an event by Dan Robertson"
+  },
+  {
+    "new_friend": {
+      "name": "Quinn Riley",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Baily Hopkins",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xfa1/v/t1.0-9/10271548_10102343837737214_872039208395611520_n.jpg?oh=955cbf743ca7d7831210a96927be03cd&oe=56B51962"
+    },
+    "type": "Romantic",
+    "story": "Was dating Baily and met Jill and Dan at Moth Event and started coming to dodgeball"
+  },
+  {
+    "new_friend": {
+      "name": "Kelly Giddens",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Kim Westberry",
+      "picture": null
+    },
+    "type": "Work",
+    "story": "They both worked at a law firm together?"
+  },
+  {
+    "new_friend": {
+      "name": "Luna Yu",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xpa1/v/t1.0-9/1374086_279496628914453_5920416947360919353_n.jpg?oh=fd5d3f174b0ac2ecdb03d82cd8be88be&oe=56C33C37"
+    },
+    "original_friend": {
+      "name": "Shandy Brown",
+      "picture": null
+    },
+    "type": "Romantic",
+    "story": "Met Shandy at Valentines Party"
+  },
+  {
+    "new_friend": {
+      "name": "Brian Mohr",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Quinn Riley",
+      "picture": null
+    },
+    "type": "Friends",
+    "story": "Quinn calls Brian his \"Camp Counselor\""
+  },
+  {
+    "new_friend": {
+      "name": "Jessie Gregger",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xpa1/v/t1.0-9/936071_10106878899053044_8649497866464645987_n.jpg?oh=39c00425e73b26c76ae2a066f936307b&oe=5686E65A"
+    },
+    "original_friend": {
+      "name": "WDS Dodgeball",
+      "picture": "http://static.tumblr.com/9f373f449ae770e85b8b0e5f60341e3c/g538qsa/rMQnjzx8b/tumblr_static_35o06wrez3ggw88gg8s0w0wc4.jpg"
+    },
+    "type": "Friends",
+    "story": "Was brought into dodgeball by Lemar and got to know peope at Burt Tourney"
+  },
+  {
+    "new_friend": {
+      "name": "Mike Smith",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Tyler Griffis",
+      "picture": null
+    },
+    "type": "Roomate",
+    "story": null
+  },
+  {
+    "new_friend": {
+      "name": "Sam Whittington",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Kyle Patrick",
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xpf1/t31.0-8/11888650_934091803322542_2011110804797657911_o.jpg"
+    },
+    "type": "Friends",
+    "story": null
+  },
+  {
+    "new_friend": {
+      "name": "Baily Hopkins",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xfa1/v/t1.0-9/10271548_10102343837737214_872039208395611520_n.jpg?oh=955cbf743ca7d7831210a96927be03cd&oe=56B51962"
+    },
+    "original_friend": {
+      "name": "Jillian Corey",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xaf1/v/t1.0-9/11255261_10152734301557554_8813830433032581145_n.jpg?oh=7d333772ad5524b9de1f5063db37dccb&oe=56B48ACA"
+    },
+    "type": "Party/Skeeball",
+    "story": "Camped with Jill at Aquazone, met Jared at GetAround, and camped with BEAT in 2014, Dan also knows her from Skeeball years ago."
+  },
+  {
+    "new_friend": {
+      "name": "Karen Lee",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xat1/v/t1.0-9/11402961_10153238111273941_8832967859722186039_n.jpg?oh=d564dc5ecff264202283b878fbe19a5b&oe=56BC3349"
+    },
+    "original_friend": {
+      "name": "Max Feldman",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xat1/v/t1.0-9/1157532_688885461163491_1103286837_n.jpg?oh=8fc64d8d6e26d364bb5b720fb7ed9b73&oe=56CBD301"
+    },
+    "type": "Party",
+    "story": "Met a CouchSurfing event through Max Feldman."
+  },
+  {
+    "new_friend": {
+      "name": "Camerian Milsaps",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Marquis Marc",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xpf1/v/t1.0-9/1606980_10102293090540033_1773250936_n.jpg?oh=97ab5a6d0b07e9506fe98b66e19f951f&oe=56C3CC91"
+    },
+    "type": "Friends?",
+    "story": "Friend of Mark from Virginia days and joined EAT ME in 2014"
+  },
+  {
+    "new_friend": {
+      "name": "Samira Ramirez",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Kyle Patrick",
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xpf1/t31.0-8/11888650_934091803322542_2011110804797657911_o.jpg"
+    },
+    "type": "Romantic",
+    "story": "Kyle and her dated, joined EAT ME camp"
+  },
+  {
+    "new_friend": {
+      "name": "Miranda Caroligne",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-ash2/v/t1.0-9/10906371_10100140984019625_6924531145272708198_n.jpg?oh=d2c0ab851d7ace6e7a2b4a25a0ee648b&oe=56C22955"
+    },
+    "original_friend": {
+      "name": "John Hanrahan",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xap1/v/t1.0-0/p206x206/11988730_10104605850645193_5783089923520529645_n.jpg?oh=2ed59153f47a4dd2754a8fbd7a3bb7b1&oe=56C75248"
+    },
+    "type": "Party",
+    "story": "Met John Hanrahan at Plunge"
+  },
+  {
+    "new_friend": {
+      "name": "Ivellisse Marie Morales",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Dairien Boyd",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xpt1/v/t1.0-9/11218060_893812833988062_1621394487479091507_n.jpg?oh=d058e92cd290aa3344d2aefab8a77e77&oe=56BB3020"
+    },
+    "type": "Romantic",
+    "story": null
+  },
+  {
+    "new_friend": {
+      "name": "Dzimitry Anishchuk",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-ash2/v/t1.0-0/p206x206/10689678_10203247577822401_1638513969604286371_n.jpg?oh=de0b044f6f0bf7313604a9d321d08b00&oe=568527E7"
+    },
+    "original_friend": {
+      "name": "Max Feldman",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xat1/v/t1.0-9/1157532_688885461163491_1103286837_n.jpg?oh=8fc64d8d6e26d364bb5b720fb7ed9b73&oe=56CBD301"
+    },
+    "type": "College",
+    "story": "Went to UC Berkeley with Max"
+  },
+  {
+    "new_friend": {
+      "name": "Connor Schmidt",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Sam Haynor",
+      "picture": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xaf1/t31.0-8/11947954_10102967902411780_9073843214159948414_o.jpg"
+    },
+    "type": "Rooomates?",
+    "story": "Sam lived in SHAZAP. Connor dated Alice who lived in SHAZAP"
+  },
+  {
+    "new_friend": {
+      "name": "Edward Scott",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xpa1/v/t1.0-0/p206x206/1472872_10151838454734677_589001927_n.jpg?oh=e0a2b5093804ba622b5eaad764f707db&oe=56D25BA2"
+    },
+    "original_friend": {
+      "name": "Amber Lamason",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xap1/v/t1.0-9/1522053_10153640490795026_1256032116_n.jpg?oh=81b903efb636675f6300787e7d8c1745&oe=56CED19F"
+    },
+    "type": "Random",
+    "story": "Saw Bike Party and followed along, met Amber and others and joined for Bike Rides. Met most others at Burning Man 2015"
+  },
+  {
+    "new_friend": {
+      "name": "Ryan Ward",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Dan Robertson",
+      "picture": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/11692804_10102870120287940_3640606862248388819_n.jpg?oh=3517defdda6484ca6d2199e64c6e017b&oe=568E633E"
+    },
+    "type": "College",
+    "story": "Knows Ryan through Ohio College. All moved to San Francisco around the same time"
   }
 ]

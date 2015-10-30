@@ -19,4 +19,11 @@ class FriendshipTableViewCell: UITableViewCell {
     @IBOutlet weak var friendshipTypeImageView: UIImageView!
     @IBOutlet weak var newFriendName: UILabel!
 
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.friendshipTypeImageView.image = nil
+        self.newFriend.image = nil
+        self.friendshipConnection.image = nil
+
+    }
 }
