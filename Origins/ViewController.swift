@@ -23,6 +23,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let data : NSData? = NSData(contentsOfFile: filePath)
         do {
             try self.friendships = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions(rawValue: 0)) as! [AnyObject];
+            self.friendships.sortInPlace({ (Object1, Object2) -> Bool in
+                let friendship1: JSON = JSON(Object1)
+                let friendship2:JSON  = JSON(Object2)
+                return friendship1["new_friend"]["name"].stringValue < friendship2["new_friend"]["name"].stringValue
+            })
         } catch {
             print("Don't care")
         }
@@ -48,10 +53,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let newFriend: JSON = JSON(friendShip["new_friend"].dictionaryValue)
         cell.storyLabel.text = friendShip["story"].stringValue
 
-        let roundedFilter: ImageFilter = RoundedCornersFilter(radius: cell.friendshipConnection.frame.size.height);
+        let roundedFilter: ImageFilter = RoundedCornersFilter(radius: cell.originalFriendImageView.frame.size.height);
 
-        cell.friendshipConnection.af_setImageWithURL(NSURL(string: originalFriend["picture"].stringValue)!, filter: roundedFilter)
-        cell.newFriend.af_setImageWithURL(NSURL(string: newFriend["picture"].stringValue)!, placeholderImage: nil, filter: roundedFilter)
+        cell.originalFriendImageView.af_setImageWithURL(NSURL(string: originalFriend["picture"].stringValue)!, filter: roundedFilter)
+        cell.newFriendImageView.af_setImageWithURL(NSURL(string: newFriend["picture"].stringValue)!, placeholderImage: nil, filter: roundedFilter)
 
         cell.originalFriendName.text = originalFriend["name"].string;
         cell.newFriendName.text = newFriend["name"].string;

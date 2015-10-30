@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -44,14 +44,14 @@
                             <constraint firstAttribute="width" constant="30" id="c83-4C-GhB"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Original Friend Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUO-pT-9qj">
-                        <rect key="frame" x="8" y="7" width="128" height="16"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Friend Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUO-pT-9qj">
+                        <rect key="frame" x="8" y="7" width="108" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Friend Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okR-1D-EWZ">
-                        <rect key="frame" x="234" y="108" width="108" height="16"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Original Friend Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okR-1D-EWZ">
+                        <rect key="frame" x="214" y="108" width="128" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -111,12 +111,12 @@
                 </variation>
             </tableViewCellContentView>
             <connections>
-                <outlet property="friendshipConnection" destination="zxf-mc-Gbv" id="yFD-ZL-5Bf"/>
                 <outlet property="friendshipTypeImageView" destination="JSy-WS-lRo" id="CEo-7w-jWR"/>
                 <outlet property="linkLine" destination="ljr-Ct-4jR" id="ybF-QP-f0N"/>
-                <outlet property="newFriend" destination="MNa-kM-Muy" id="e4A-3c-82Z"/>
-                <outlet property="newFriendName" destination="okR-1D-EWZ" id="nSb-9e-2pu"/>
-                <outlet property="originalFriendName" destination="BUO-pT-9qj" id="p4h-b3-k7P"/>
+                <outlet property="newFriendImageView" destination="zxf-mc-Gbv" id="Das-V8-QpO"/>
+                <outlet property="newFriendName" destination="BUO-pT-9qj" id="GJi-zs-ZGo"/>
+                <outlet property="originalFriendImageView" destination="MNa-kM-Muy" id="xXQ-XR-wBy"/>
+                <outlet property="originalFriendName" destination="okR-1D-EWZ" id="knR-Nb-z68"/>
                 <outlet property="storyLabel" destination="s1C-Ss-RM3" id="9Jf-IG-xzL"/>
             </connections>
             <point key="canvasLocation" x="198" y="337"/>

@@ -11,19 +11,23 @@ import UIKit
 
 class FriendshipTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var friendshipConnection: UIImageView!
-    @IBOutlet weak var storyLabel: UILabel!
+    @IBOutlet weak var originalFriendImageView: UIImageView!
     @IBOutlet weak var originalFriendName: UILabel!
-    @IBOutlet weak var newFriend: UIImageView!
-    @IBOutlet weak var linkLine: UIView!
+
     @IBOutlet weak var friendshipTypeImageView: UIImageView!
+    @IBOutlet weak var linkLine: UIView!
+
+    @IBOutlet weak var newFriendImageView: UIImageView!
     @IBOutlet weak var newFriendName: UILabel!
+
+    @IBOutlet weak var storyLabel: UILabel!
+
 
     override func prepareForReuse() {
         super.prepareForReuse()
         self.friendshipTypeImageView.image = nil
-        self.newFriend.image = nil
-        self.friendshipConnection.image = nil
+        self.newFriendImageView.image = nil
+        self.originalFriendImageView.image = nil
 
     }
 }
