@@ -42,6 +42,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableView.rowHeight = UITableViewAutomaticDimension;
 
         // TODO: This pattern sucks, how do I avoid that initialization method?
+        // I don't want to have to do a! on this call to make sure there's a local variable that I don't have to do ! for, but I also don't want to initialize this in the self class.        
         self.searchController = UISearchController(searchResultsController: nil)
 
         let searchController = self.searchController!
