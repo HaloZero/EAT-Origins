@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import AlamofireImage
 import SwiftyJSON
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -29,6 +28,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 return friendship1["new_friend"]["name"].stringValue < friendship2["new_friend"]["name"].stringValue
             })
         } catch {
+
             print("Don't care")
         }
 
@@ -48,23 +48,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell : FriendshipTableViewCell =
         self.tableView.dequeueReusableCellWithIdentifier("FriendshipCell", forIndexPath: indexPath) as! FriendshipTableViewCell
 
-        let friendShip: JSON = JSON(self.friendships[indexPath.row])
-        let originalFriend: JSON = JSON(friendShip["original_friend"].dictionaryValue)
-        let newFriend: JSON = JSON(friendShip["new_friend"].dictionaryValue)
-        cell.storyLabel.text = friendShip["story"].stringValue
-
-        let roundedFilter: ImageFilter = RoundedCornersFilter(radius: cell.originalFriendImageView.frame.size.height);
-
-        cell.originalFriendImageView.af_setImageWithURL(NSURL(string: originalFriend["picture"].stringValue)!, filter: roundedFilter)
-        cell.newFriendImageView.af_setImageWithURL(NSURL(string: newFriend["picture"].stringValue)!, placeholderImage: nil, filter: roundedFilter)
-
-        cell.originalFriendName.text = originalFriend["name"].string;
-        cell.newFriendName.text = newFriend["name"].string;
-        cell.linkLine.backgroundColor = UIColor.greenColor();
-        cell.friendshipTypeImageView.image = UIImage(named: friendShip["type"].stringValue.lowercaseString);
-        if (cell.friendshipTypeImageView.image != nil) {
-            cell.friendshipTypeImageView.backgroundColor = UIColor.whiteColor();
-        }
+        let friendship: JSON = JSON(self.friendships[indexPath.row])
+        cell.configureFromFriendship(friendship);
         
         return cell;
 

@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		931C5BC91BCCA56C00746712 /* friendship.json in Resources */ = {isa = PBXBuildFile; fileRef = 931C5BC81BCCA56C00746712 /* friendship.json */; settings = {ASSET_TAGS = (); }; };
+		931C5BC91BCCA56C00746712 /* friendship.json in Resources */ = {isa = PBXBuildFile; fileRef = 931C5BC81BCCA56C00746712 /* friendship.json */; };
 		93AAB25D1BCC532E00337E6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AAB25C1BCC532E00337E6C /* AppDelegate.swift */; };
 		93AAB25F1BCC532E00337E6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AAB25E1BCC532E00337E6C /* ViewController.swift */; };
 		93AAB2621BCC532E00337E6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AAB2601BCC532E00337E6C /* Main.storyboard */; };
 		93AAB2641BCC532E00337E6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93AAB2631BCC532E00337E6C /* Assets.xcassets */; };
 		93AAB2671BCC532E00337E6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AAB2651BCC532E00337E6C /* LaunchScreen.storyboard */; };
-		93AAB2711BCC61BE00337E6C /* FriendshipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AAB2701BCC61BE00337E6C /* FriendshipTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		93AAB2731BCC64F400337E6C /* FriendshipTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93AAB2721BCC64F400337E6C /* FriendshipTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		93AAB2711BCC61BE00337E6C /* FriendshipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AAB2701BCC61BE00337E6C /* FriendshipTableViewCell.swift */; };
+		93AAB2731BCC64F400337E6C /* FriendshipTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93AAB2721BCC64F400337E6C /* FriendshipTableViewCell.xib */; };
 		D9E25BC5232BF1760071C6E7 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E08E400E6E2449E949F4484 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -54,6 +54,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		93449D851BE9767700081F5E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				93AAB2631BCC532E00337E6C /* Assets.xcassets */,
+				931C5BC81BCCA56C00746712 /* friendship.json */,
+				93AAB2681BCC532E00337E6C /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		93449D861BE9768300081F5E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				93AAB2701BCC61BE00337E6C /* FriendshipTableViewCell.swift */,
+				93AAB2721BCC64F400337E6C /* FriendshipTableViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		93449D871BE9768F00081F5E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				93AAB2601BCC532E00337E6C /* Main.storyboard */,
+				93AAB25E1BCC532E00337E6C /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		93AAB2501BCC532E00337E6C = {
 			isa = PBXGroup;
 			children = (
@@ -76,14 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				93AAB25C1BCC532E00337E6C /* AppDelegate.swift */,
-				93AAB25E1BCC532E00337E6C /* ViewController.swift */,
-				93AAB2721BCC64F400337E6C /* FriendshipTableViewCell.xib */,
-				93AAB2601BCC532E00337E6C /* Main.storyboard */,
-				93AAB2701BCC61BE00337E6C /* FriendshipTableViewCell.swift */,
-				931C5BC81BCCA56C00746712 /* friendship.json */,
-				93AAB2631BCC532E00337E6C /* Assets.xcassets */,
+				93449D871BE9768F00081F5E /* Controllers */,
 				93AAB2651BCC532E00337E6C /* LaunchScreen.storyboard */,
-				93AAB2681BCC532E00337E6C /* Info.plist */,
+				93449D851BE9767700081F5E /* Resources */,
+				93449D861BE9768300081F5E /* Views */,
 			);
 			path = Origins;
 			sourceTree = "<group>";

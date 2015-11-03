@@ -98,7 +98,7 @@
   {
     "new_friend": {
       "name": "Derrick Huhn",
-      "picture": null
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-ash2/v/t1.0-9/10435638_10104622624141040_6777813203426058092_n.jpg?oh=cd2ad884c8ca923a2b25c5e2cbc38710&oe=56AE7000"
     },
     "original_friend": {
       "name": "WDS Dodgeball",
@@ -110,7 +110,7 @@
   {
     "new_friend": {
       "name": "Heather S",
-      "picture": null
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/1655843_644454322257249_269950959_n.jpg?oh=0b1ba1189f0eb175fb0cebb1a9605869&oe=56852FDB"
     },
     "original_friend": {
       "name": "Amber Lamason",
@@ -194,7 +194,7 @@
   {
     "new_friend": {
       "name": "Shandy Brown",
-      "picture": null
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/10390399_10155008329025089_8267240218132560987_n.jpg?oh=652b969d3f8d178d2d90020b51b66831&oe=56BBDD20"
     },
     "original_friend": {
       "name": "WDS Dodgeball",
@@ -211,6 +211,18 @@
     "original_friend": null,
     "type": "Work",
     "story": "Jay and Rob both do Audio Visual for work. Met through work. According to Jay- someone at Parks and Recs informed Jay about dodgeball and he just attended"
+  },
+  {
+    "new_friend": {
+      "name": "Marquis Marc",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xpf1/v/t1.0-9/1606980_10102293090540033_1773250936_n.jpg?oh=97ab5a6d0b07e9506fe98b66e19f951f&oe=56C3CC91"
+    },
+    "original_friend": {
+      "name": "WDS Dodgeball",
+      "picture": "http://static.tumblr.com/9f373f449ae770e85b8b0e5f60341e3c/g538qsa/rMQnjzx8b/tumblr_static_35o06wrez3ggw88gg8s0w0wc4.jpg"
+    },
+    "type": "Dodgeball",
+    "story": "heard about dodgeball somewhow?"
   },
   {
     "new_friend": {
@@ -349,14 +361,17 @@
       "name": "Mel Lo",
       "picture": null
     },
-    "original_friend": null,
+    "original_friend": {
+      "name": "Amber Lamason",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xap1/v/t1.0-9/1522053_10153640490795026_1256032116_n.jpg?oh=81b903efb636675f6300787e7d8c1745&oe=56CED19F"
+    },
     "type": "Friends",
     "story": "Amber and Kristy met Melissa and her sister at a Mustafa Party."
   },
   {
     "new_friend": {
       "name": "Christina Mitchell",
-      "picture": null
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-frc3/v/t1.0-9/10485388_10103287421827113_493901415237954047_n.jpg?oh=718873bd4800d556472e2914a8edbf06&oe=56CE6AAC"
     },
     "original_friend": {
       "name": "Joseph Yamada",
@@ -476,11 +491,11 @@
   {
     "new_friend": {
       "name": "Glen Rhodes",
-      "picture": null
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-prn2/v/t1.0-9/10881888_10105489974249470_7188484240886293127_n.jpg?oh=b8fe7184eb2f469c62eabea8267f9398&oe=56D16157"
     },
     "original_friend": {
       "name": "Derrick Huhn",
-      "picture": null
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-ash2/v/t1.0-9/10435638_10104622624141040_6777813203426058092_n.jpg?oh=cd2ad884c8ca923a2b25c5e2cbc38710&oe=56AE7000"
     },
     "type": "Work",
     "story": "Derrik and Glen both worked at Apple"
@@ -500,7 +515,7 @@
   {
     "new_friend": {
       "name": "Vivek Potana",
-      "picture": null
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1382860_10100403074602693_1987506673_n.jpg?oh=e45e7c9bbc8a3824ed7a7d4c3f25044d&oe=56B780B0"
     },
     "original_friend": {
       "name": "WDS Dodgeball",
@@ -516,7 +531,7 @@
     },
     "original_friend": {
       "name": "Christina Mitchell",
-      "picture": null
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-frc3/v/t1.0-9/10485388_10103287421827113_493901415237954047_n.jpg?oh=718873bd4800d556472e2914a8edbf06&oe=56CE6AAC"
     },
     "type": "Work",
     "story": "Coworker of Christina through One King Lane, came to dodgeball"
@@ -540,7 +555,7 @@
     },
     "original_friend": {
       "name": "Shandy Brown",
-      "picture": null
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/10390399_10155008329025089_8267240218132560987_n.jpg?oh=652b969d3f8d178d2d90020b51b66831&oe=56BBDD20"
     },
     "type": "Games",
     "story": "Met Hilary at a board games at Taqueira San Jose and invited her out"
@@ -560,11 +575,11 @@
   {
     "new_friend": {
       "name": "Erica Megan Hurst",
-      "picture": null
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xtl1/v/t1.0-9/12038387_10156220305780438_1769365465437668177_n.jpg?oh=74aae7ef2382ad677a0de0454a7f9f98&oe=56BA821B"
     },
     "original_friend": {
       "name": "Shandy Brown",
-      "picture": null
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/10390399_10155008329025089_8267240218132560987_n.jpg?oh=652b969d3f8d178d2d90020b51b66831&oe=56BBDD20"
     },
     "type": "Friend",
     "story": "Knows Shandy because she had a mutual friend with Shandy named Annie"
@@ -572,11 +587,11 @@
   {
     "new_friend": {
       "name": "Greg Goglin",
-      "picture": null
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/12032244_10101568038450731_5157729271015782257_n.jpg?oh=757ca01586a38a9f154c8cbde1acc319&oe=56CEBB31"
     },
     "original_friend": {
       "name": "Erica Megan Hurst",
-      "picture": null
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xtl1/v/t1.0-9/12038387_10156220305780438_1769365465437668177_n.jpg?oh=74aae7ef2382ad677a0de0454a7f9f98&oe=56BA821B"
     },
     "type": "Romantic",
     "story": "OkCupid relatinship with Erica, met most others at Burning Man"
@@ -644,7 +659,7 @@
   {
     "new_friend": {
       "name": "Amy Lam",
-      "picture": null
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/11692673_10100602018352198_1117777079380893582_n.jpg?oh=9dc0bff77f763517588cdc3ad2584113&oe=56B7AA0B"
     },
     "original_friend": null,
     "type": "Dodgeball",
@@ -677,7 +692,7 @@
   {
     "new_friend": {
       "name": "Timoty Loui",
-      "picture": null
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-prn2/v/t1.0-9/946932_672583117206_2014554442_n.jpg?oh=b95de15387b87006db838e9fa232df25&oe=56B2628D"
     },
     "original_friend": {
       "name": "WDS Dodgeball",
@@ -701,7 +716,7 @@
   {
     "new_friend": {
       "name": "Quinn Riley",
-      "picture": null
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/271103_882910019083_6524952_n.jpg?oh=0c6b6ad9da6ba277ee34a2fb9fb80b30&oe=56B028D0"
     },
     "original_friend": {
       "name": "Baily Hopkins",
@@ -729,7 +744,7 @@
     },
     "original_friend": {
       "name": "Shandy Brown",
-      "picture": null
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/10390399_10155008329025089_8267240218132560987_n.jpg?oh=652b969d3f8d178d2d90020b51b66831&oe=56BBDD20"
     },
     "type": "Romantic",
     "story": "Met Shandy at Valentines Party"
@@ -741,7 +756,7 @@
     },
     "original_friend": {
       "name": "Quinn Riley",
-      "picture": null
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/271103_882910019083_6524952_n.jpg?oh=0c6b6ad9da6ba277ee34a2fb9fb80b30&oe=56B028D0"
     },
     "type": "Friends",
     "story": "Quinn calls Brian his \"Camp Counselor\""
@@ -856,6 +871,18 @@
   },
   {
     "new_friend": {
+      "name": "Kim Follis",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Greg Goglin",
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/12032244_10101568038450731_5157729271015782257_n.jpg?oh=757ca01586a38a9f154c8cbde1acc319&oe=56CEBB31"
+    },
+    "type": "Friends",
+    "story": "Went to High School with Greg Goglin"
+  },
+  {
+    "new_friend": {
       "name": "Dzimitry Anishchuk",
       "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-ash2/v/t1.0-0/p206x206/10689678_10203247577822401_1638513969604286371_n.jpg?oh=de0b044f6f0bf7313604a9d321d08b00&oe=568527E7"
     },
@@ -865,6 +892,18 @@
     },
     "type": "College",
     "story": "Went to UC Berkeley with Max"
+  },
+  {
+    "new_friend": {
+      "name": "Briana Cushing",
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/11059957_815120125871_8558398909547316580_n.jpg?oh=5076a011706767077c72cb91ed781b53&oe=56D07150"
+    },
+    "original_friend": {
+      "name": "Quinn Riley",
+      "picture": "https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/271103_882910019083_6524952_n.jpg?oh=0c6b6ad9da6ba277ee34a2fb9fb80b30&oe=56B028D0"
+    },
+    "type": "Romantic",
+    "story": "Dated and lived with Quinn Riley"
   },
   {
     "new_friend": {
@@ -901,5 +940,17 @@
     },
     "type": "College",
     "story": "Knows Ryan through Ohio College. All moved to San Francisco around the same time"
+  },
+  {
+    "new_friend": {
+      "name": "Bodhi Sansom",
+      "picture": null
+    },
+    "original_friend": {
+      "name": "Jared Klein",
+      "picture": "https://scontent.fsjc1-3.fna.fbcdn.net/hphotos-xtf1/v/t1.0-9/11693885_774259471490_2668131807726434493_n.jpg?oh=63f0c2ae9e693cd3a5bf2d46c066c52c&oe=56B23181"
+    },
+    "type": "Work",
+    "story": "Worked with Jared at GetAround, started dating Laura Ray"
   }
 ]
