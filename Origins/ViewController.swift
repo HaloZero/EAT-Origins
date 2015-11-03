@@ -9,14 +9,16 @@
 import UIKit
 import SwiftyJSON
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchControllerDelegate, UISearchResultsUpdating {
 
     @IBOutlet weak var tableView: UITableView!
-    var friendships: [AnyObject] = [];
+
+    var friendships: [AnyObject] = []
+    var fullFriendshipList: [AnyObject] = []
+    var searchController: UISearchController? = nil;
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
 
         let filePath : String = NSBundle(forClass: ViewController.self).pathForResource("friendship", ofType: "json")!
         let data : NSData? = NSData(contentsOfFile: filePath)
@@ -27,8 +29,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 let friendship2:JSON  = JSON(Object2)
                 return friendship1["new_friend"]["name"].stringValue < friendship2["new_friend"]["name"].stringValue
             })
+            self.fullFriendshipList = self.friendships;
         } catch {
-
             print("Don't care")
         }
 
@@ -38,6 +40,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableView.dataSource = self
         self.tableView.estimatedRowHeight = 100;
         self.tableView.rowHeight = UITableViewAutomaticDimension;
+
+        // TODO: This pattern sucks, how do I avoid that initialization method?
+        self.searchController = UISearchController(searchResultsController: nil)
+
+        let searchController = self.searchController!
+        searchController.searchResultsUpdater = self;
+        searchController.dimsBackgroundDuringPresentation = false;
+
+        self.tableView.tableHeaderView = searchController.searchBar;
+        self.definesPresentationContext = true;
+    }
+
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        if (searchController.searchBar.text == nil || searchController.searchBar.text!.isEmpty) {
+            self.friendships = self.fullFriendshipList;
+        } else {
+            self.friendships = self.fullFriendshipList.filter({ (friendship: AnyObject) -> Bool in
+                let newFriendName : String = JSON(friendship)["new_friend"]["name"].stringValue
+                let originalFriendName : String = JSON(friendship)["original_friend"]["name"].stringValue
+                return newFriendName.containsString(searchController.searchBar.text!) || originalFriendName.containsString(searchController.searchBar.text!)
+            })
+        }
+        self.tableView.reloadData()
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
