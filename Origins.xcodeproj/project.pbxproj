@@ -18,7 +18,7 @@
 		93AAB2671BCC532E00337E6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AAB2651BCC532E00337E6C /* LaunchScreen.storyboard */; };
 		93AAB2711BCC61BE00337E6C /* FriendshipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AAB2701BCC61BE00337E6C /* FriendshipTableViewCell.swift */; };
 		93AAB2731BCC64F400337E6C /* FriendshipTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93AAB2721BCC64F400337E6C /* FriendshipTableViewCell.xib */; };
-		D9E25BC5232BF1760071C6E7 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E08E400E6E2449E949F4484 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D9E25BC5232BF1760071C6E7 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E08E400E6E2449E949F4484 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
