@@ -31,7 +31,6 @@ class FriendshipTableViewCell: UITableViewCell {
         self.friendshipTypeImageView.image = nil
         self.newFriendImageView.image = nil
         self.originalFriendImageView.image = nil
-
     }
 
     func configureFromFriendship(friendship: JSON) {
@@ -41,8 +40,14 @@ class FriendshipTableViewCell: UITableViewCell {
 
         let roundedFilter: ImageFilter = RoundedCornersFilter(radius: self.originalFriendImageView.frame.size.height);
 
-        self.originalFriendImageView.af_setImageWithURL(NSURL(string: originalFriend["picture"].stringValue)!, filter: roundedFilter)
-        self.newFriendImageView.af_setImageWithURL(NSURL(string: newFriend["picture"].stringValue)!, placeholderImage: nil, filter: roundedFilter)
+        self.originalFriendImageView.af_setImageWithURL(
+            NSURL(string: originalFriend["picture"].stringValue)!,
+            filter: roundedFilter
+        )
+        self.newFriendImageView.af_setImageWithURL(
+            NSURL(string: newFriend["picture"].stringValue)!,
+            placeholderImage: nil, filter: roundedFilter
+        )
 
         self.originalFriendName.text = originalFriend["name"].string;
         self.newFriendName.text = newFriend["name"].string;
