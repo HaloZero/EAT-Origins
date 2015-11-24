@@ -19,6 +19,7 @@
 		93AAB2711BCC61BE00337E6C /* FriendshipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AAB2701BCC61BE00337E6C /* FriendshipTableViewCell.swift */; };
 		93AAB2731BCC64F400337E6C /* FriendshipTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93AAB2721BCC64F400337E6C /* FriendshipTableViewCell.xib */; };
 		D9E25BC5232BF1760071C6E7 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E08E400E6E2449E949F4484 /* Pods.framework */; };
+		DA2311951C051BF700279AC7 /* EdgeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2311941C051BF700279AC7 /* EdgeNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		93AAB2721BCC64F400337E6C /* FriendshipTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendshipTableViewCell.xib; sourceTree = "<group>"; };
 		C353476BBA107714A4E021B4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CBBD1E402982C6E6C3EFADAA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		DA2311941C051BF700279AC7 /* EdgeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EdgeNode.swift; path = Graph/EdgeNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		93AAB25B1BCC532E00337E6C /* Origins */ = {
 			isa = PBXGroup;
 			children = (
+				DA2311971C051C0900279AC7 /* Graph */,
 				93AAB25C1BCC532E00337E6C /* AppDelegate.swift */,
 				93449D871BE9768F00081F5E /* Controllers */,
 				93AAB2651BCC532E00337E6C /* LaunchScreen.storyboard */,
@@ -119,6 +122,14 @@
 				93449D861BE9768300081F5E /* Views */,
 			);
 			path = Origins;
+			sourceTree = "<group>";
+		};
+		DA2311971C051C0900279AC7 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				DA2311941C051BF700279AC7 /* EdgeNode.swift */,
+			);
+			name = Graph;
 			sourceTree = "<group>";
 		};
 		F986A3042CDC3617497134AC /* Pods */ = {
@@ -159,6 +170,7 @@
 		93AAB2511BCC532E00337E6C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Rohan;
 				TargetAttributes = {
@@ -254,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA2311951C051BF700279AC7 /* EdgeNode.swift in Sources */,
 				93AAB25D1BCC532E00337E6C /* AppDelegate.swift in Sources */,
 				93449D8D1BE995EE00081F5E /* GraphViewController.swift in Sources */,
 				93449D8B1BE995C400081F5E /* ListViewController.swift in Sources */,
@@ -370,10 +383,12 @@
 			baseConfigurationReference = CBBD1E402982C6E6C3EFADAA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Origins/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RD.Origins;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -382,6 +397,7 @@
 			baseConfigurationReference = C353476BBA107714A4E021B4 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Origins/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RD.Origins;

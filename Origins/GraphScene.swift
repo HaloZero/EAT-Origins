@@ -24,9 +24,7 @@ class GraphScene: SKScene {
         ball2.position = CGPointMake(200, 350)
         self.addChild(ball2)
 
-        let lineNode = SKShapeNode()
-        lineNode.path = self.createLineBetweenNode(ball1, node2: ball2)
-        lineNode.name = "Line";
+        let lineNode = EdgeNode(node1: ball1, node2: ball2)
 
         self.addChild(lineNode)
     }
@@ -51,12 +49,9 @@ class GraphScene: SKScene {
     }
 
     override func update(currentTime: NSTimeInterval) {
-        var lineNode : SKShapeNode? = self.childNodeWithName("Line") as? SKShapeNode
+        let lineNode : EdgeNode? = self.childNodeWithName("EDGE") as? EdgeNode
         if let lineNode = lineNode {
-            let ball1 = self.childNodeWithName("Ball1") as! SKShapeNode
-            let ball2 = self.childNodeWithName("Ball2") as! SKShapeNode
-            lineNode.path = nil
-            lineNode.path = self.createLineBetweenNode(ball1, node2: ball2)
+            lineNode.updateEdge()
         }
     }
 }
