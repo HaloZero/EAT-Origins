@@ -49,7 +49,7 @@ class GraphScene: SKScene {
     }
 
     override func update(currentTime: NSTimeInterval) {
-        let lineNode : EdgeNode? = self.childNodeWithName("EDGE") as? EdgeNode
+        let lineNode : EdgeNode? = self.childNodeWithName(EdgeNode.nodeTypeName) as? EdgeNode
         if let lineNode = lineNode {
             lineNode.updateEdge()
         }

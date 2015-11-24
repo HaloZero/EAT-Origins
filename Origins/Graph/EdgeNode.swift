@@ -10,6 +10,7 @@ import Foundation
 import SpriteKit
 
 class EdgeNode : SKShapeNode {
+    static let nodeTypeName = "EDGE"
     var node1: SKShapeNode
     var node2: SKShapeNode
 
@@ -18,7 +19,7 @@ class EdgeNode : SKShapeNode {
         self.node2 = node2
         super.init()
 
-        self.name = "EDGE"
+        self.name = EdgeNode.nodeTypeName
     }
 
     required init?(coder aDecoder: NSCoder) {
