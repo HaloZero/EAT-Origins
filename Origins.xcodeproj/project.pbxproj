@@ -20,6 +20,7 @@
 		93AAB2731BCC64F400337E6C /* FriendshipTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93AAB2721BCC64F400337E6C /* FriendshipTableViewCell.xib */; };
 		D9E25BC5232BF1760071C6E7 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E08E400E6E2449E949F4484 /* Pods.framework */; };
 		DA2311951C051BF700279AC7 /* EdgeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2311941C051BF700279AC7 /* EdgeNode.swift */; };
+		DA2311991C05324400279AC7 /* CircleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2311981C05324400279AC7 /* CircleNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		C353476BBA107714A4E021B4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CBBD1E402982C6E6C3EFADAA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DA2311941C051BF700279AC7 /* EdgeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EdgeNode.swift; path = Graph/EdgeNode.swift; sourceTree = "<group>"; };
+		DA2311981C05324400279AC7 /* CircleNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircleNode.swift; path = Graph/CircleNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				DA2311941C051BF700279AC7 /* EdgeNode.swift */,
+				DA2311981C05324400279AC7 /* CircleNode.swift */,
 			);
 			name = Graph;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				93449D8D1BE995EE00081F5E /* GraphViewController.swift in Sources */,
 				93449D8B1BE995C400081F5E /* ListViewController.swift in Sources */,
 				93449D911BE997EE00081F5E /* GraphScene.swift in Sources */,
+				DA2311991C05324400279AC7 /* CircleNode.swift in Sources */,
 				93AAB2711BCC61BE00337E6C /* FriendshipTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

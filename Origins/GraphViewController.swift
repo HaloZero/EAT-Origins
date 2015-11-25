@@ -31,6 +31,9 @@ class GraphViewController: UIViewController {
         super.viewWillAppear(animated)
     }
 
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
 
 
 }

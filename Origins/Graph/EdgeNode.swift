@@ -11,10 +11,10 @@ import SpriteKit
 
 class EdgeNode : SKShapeNode {
     static let nodeTypeName = "EDGE"
-    var node1: SKShapeNode
-    var node2: SKShapeNode
+    var node1: CircleNode
+    var node2: CircleNode
 
-    init(node1 : SKShapeNode, node2: SKShapeNode) {
+    init(node1 : CircleNode, node2: CircleNode) {
         self.node1 = node1;
         self.node2 = node2
         super.init()
