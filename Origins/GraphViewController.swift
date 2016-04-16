@@ -11,6 +11,8 @@ import SpriteKit
 
 class GraphViewController: UIViewController {
 
+    var scene: SKScene!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,16 +21,20 @@ class GraphViewController: UIViewController {
         skView.showsNodeCount = true
         skView.ignoresSiblingOrder = true
 
-        let scene = GraphScene(size: skView.bounds.size)
-        scene.scaleMode = .AspectFill
+        self.scene = GraphScene(size: skView.bounds.size)
+        self.scene.scaleMode = .AspectFill
 
-        skView.presentScene(scene)
-
-        self.tabBarController!.tabBar.hidden = true
+        skView.presentScene(self.scene)
     }
 
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.scene.paused = true
+
+    }
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        self.scene.paused = false
     }
 
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

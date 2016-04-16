@@ -21,6 +21,20 @@
 		D9E25BC5232BF1760071C6E7 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E08E400E6E2449E949F4484 /* Pods.framework */; };
 		DA2311951C051BF700279AC7 /* EdgeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2311941C051BF700279AC7 /* EdgeNode.swift */; };
 		DA2311991C05324400279AC7 /* CircleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2311981C05324400279AC7 /* CircleNode.swift */; };
+		DAA980D01C0636D200A68DDB /* ATEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA980B11C0636D200A68DDB /* ATEdge.m */; };
+		DAA980D11C0636D200A68DDB /* ATNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA980B31C0636D200A68DDB /* ATNode.m */; };
+		DAA980D21C0636D200A68DDB /* ATBarnesHutBranch.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA980B61C0636D200A68DDB /* ATBarnesHutBranch.m */; };
+		DAA980D31C0636D200A68DDB /* ATBarnesHutTree.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA980B81C0636D200A68DDB /* ATBarnesHutTree.m */; };
+		DAA980D41C0636D200A68DDB /* ATKernel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA980BB1C0636D200A68DDB /* ATKernel.m */; };
+		DAA980D51C0636D200A68DDB /* ATEnergy.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA980BE1C0636D200A68DDB /* ATEnergy.m */; };
+		DAA980D61C0636D200A68DDB /* ATParticle.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA980C01C0636D200A68DDB /* ATParticle.m */; };
+		DAA980D71C0636D200A68DDB /* ATPhysics.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA980C21C0636D200A68DDB /* ATPhysics.m */; };
+		DAA980D81C0636D200A68DDB /* ATSpring.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA980C41C0636D200A68DDB /* ATSpring.m */; };
+		DAA980D91C0636D200A68DDB /* ATSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA980CA1C0636D200A68DDB /* ATSystem.m */; };
+		DAA980DA1C0636D200A68DDB /* ATSystemParams.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA980CC1C0636D200A68DDB /* ATSystemParams.m */; };
+		DAA980DB1C0636D200A68DDB /* ATSystemState.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA980CF1C0636D200A68DDB /* ATSystemState.m */; };
+		DAA980DD1C0636F700A68DDB /* GraphViewControllerArbor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA980DC1C0636F700A68DDB /* GraphViewControllerArbor.swift */; };
+		DAA980E11C06393400A68DDB /* AtlasCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA980E01C06393400A68DDB /* AtlasCanvasView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +56,37 @@
 		CBBD1E402982C6E6C3EFADAA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DA2311941C051BF700279AC7 /* EdgeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EdgeNode.swift; path = Graph/EdgeNode.swift; sourceTree = "<group>"; };
 		DA2311981C05324400279AC7 /* CircleNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircleNode.swift; path = Graph/CircleNode.swift; sourceTree = "<group>"; };
+		DAA980B01C0636D200A68DDB /* ATEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATEdge.h; sourceTree = "<group>"; };
+		DAA980B11C0636D200A68DDB /* ATEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATEdge.m; sourceTree = "<group>"; };
+		DAA980B21C0636D200A68DDB /* ATNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATNode.h; sourceTree = "<group>"; };
+		DAA980B31C0636D200A68DDB /* ATNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATNode.m; sourceTree = "<group>"; };
+		DAA980B51C0636D200A68DDB /* ATBarnesHutBranch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATBarnesHutBranch.h; sourceTree = "<group>"; };
+		DAA980B61C0636D200A68DDB /* ATBarnesHutBranch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATBarnesHutBranch.m; sourceTree = "<group>"; };
+		DAA980B71C0636D200A68DDB /* ATBarnesHutTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATBarnesHutTree.h; sourceTree = "<group>"; };
+		DAA980B81C0636D200A68DDB /* ATBarnesHutTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATBarnesHutTree.m; sourceTree = "<group>"; };
+		DAA980BA1C0636D200A68DDB /* ATKernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATKernel.h; sourceTree = "<group>"; };
+		DAA980BB1C0636D200A68DDB /* ATKernel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATKernel.m; sourceTree = "<group>"; };
+		DAA980BD1C0636D200A68DDB /* ATEnergy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATEnergy.h; sourceTree = "<group>"; };
+		DAA980BE1C0636D200A68DDB /* ATEnergy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATEnergy.m; sourceTree = "<group>"; };
+		DAA980BF1C0636D200A68DDB /* ATParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATParticle.h; sourceTree = "<group>"; };
+		DAA980C01C0636D200A68DDB /* ATParticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATParticle.m; sourceTree = "<group>"; };
+		DAA980C11C0636D200A68DDB /* ATPhysics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATPhysics.h; sourceTree = "<group>"; };
+		DAA980C21C0636D200A68DDB /* ATPhysics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATPhysics.m; sourceTree = "<group>"; };
+		DAA980C31C0636D200A68DDB /* ATSpring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATSpring.h; sourceTree = "<group>"; };
+		DAA980C41C0636D200A68DDB /* ATSpring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATSpring.m; sourceTree = "<group>"; };
+		DAA980C51C0636D200A68DDB /* PSArborTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSArborTouch.h; sourceTree = "<group>"; };
+		DAA980C71C0636D200A68DDB /* ATGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGeometry.h; sourceTree = "<group>"; };
+		DAA980C91C0636D200A68DDB /* ATSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATSystem.h; sourceTree = "<group>"; };
+		DAA980CA1C0636D200A68DDB /* ATSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATSystem.m; sourceTree = "<group>"; };
+		DAA980CB1C0636D200A68DDB /* ATSystemParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATSystemParams.h; sourceTree = "<group>"; };
+		DAA980CC1C0636D200A68DDB /* ATSystemParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATSystemParams.m; sourceTree = "<group>"; };
+		DAA980CD1C0636D200A68DDB /* ATSystemRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATSystemRenderer.h; sourceTree = "<group>"; };
+		DAA980CE1C0636D200A68DDB /* ATSystemState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATSystemState.h; sourceTree = "<group>"; };
+		DAA980CF1C0636D200A68DDB /* ATSystemState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATSystemState.m; sourceTree = "<group>"; };
+		DAA980DC1C0636F700A68DDB /* GraphViewControllerArbor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphViewControllerArbor.swift; sourceTree = "<group>"; };
+		DAA980DF1C06393400A68DDB /* AtlasCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtlasCanvasView.h; sourceTree = "<group>"; };
+		DAA980E01C06393400A68DDB /* AtlasCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtlasCanvasView.m; sourceTree = "<group>"; };
+		DAA980E31C063A3600A68DDB /* Origins-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Origins-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +104,7 @@
 		619DE2D201246714E0D29C98 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DAA980AE1C0636D200A68DDB /* PSArborTouch */,
 				4E08E400E6E2449E949F4484 /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -67,6 +113,7 @@
 		93449D851BE9767700081F5E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DAA980E31C063A3600A68DDB /* Origins-Bridging-Header.h */,
 				93AAB2631BCC532E00337E6C /* Assets.xcassets */,
 				931C5BC81BCCA56C00746712 /* friendship.json */,
 				93AAB2681BCC532E00337E6C /* Info.plist */,
@@ -88,6 +135,7 @@
 			children = (
 				93AAB2601BCC532E00337E6C /* Main.storyboard */,
 				93449D8C1BE995EE00081F5E /* GraphViewController.swift */,
+				DAA980DC1C0636F700A68DDB /* GraphViewControllerArbor.swift */,
 				93449D8A1BE995C400081F5E /* ListViewController.swift */,
 			);
 			name = Controllers;
@@ -133,6 +181,98 @@
 				DA2311981C05324400279AC7 /* CircleNode.swift */,
 			);
 			name = Graph;
+			sourceTree = "<group>";
+		};
+		DAA980AE1C0636D200A68DDB /* PSArborTouch */ = {
+			isa = PBXGroup;
+			children = (
+				DAA980DE1C06391400A68DDB /* Controllers */,
+				DAA980AF1C0636D200A68DDB /* Atoms */,
+				DAA980B41C0636D200A68DDB /* Barnes-Hut */,
+				DAA980B91C0636D200A68DDB /* Kernel */,
+				DAA980BC1C0636D200A68DDB /* Physics */,
+				DAA980C51C0636D200A68DDB /* PSArborTouch.h */,
+				DAA980C61C0636D200A68DDB /* Support */,
+				DAA980C81C0636D200A68DDB /* System */,
+			);
+			path = PSArborTouch;
+			sourceTree = "<group>";
+		};
+		DAA980AF1C0636D200A68DDB /* Atoms */ = {
+			isa = PBXGroup;
+			children = (
+				DAA980B01C0636D200A68DDB /* ATEdge.h */,
+				DAA980B11C0636D200A68DDB /* ATEdge.m */,
+				DAA980B21C0636D200A68DDB /* ATNode.h */,
+				DAA980B31C0636D200A68DDB /* ATNode.m */,
+			);
+			path = Atoms;
+			sourceTree = "<group>";
+		};
+		DAA980B41C0636D200A68DDB /* Barnes-Hut */ = {
+			isa = PBXGroup;
+			children = (
+				DAA980B51C0636D200A68DDB /* ATBarnesHutBranch.h */,
+				DAA980B61C0636D200A68DDB /* ATBarnesHutBranch.m */,
+				DAA980B71C0636D200A68DDB /* ATBarnesHutTree.h */,
+				DAA980B81C0636D200A68DDB /* ATBarnesHutTree.m */,
+			);
+			path = "Barnes-Hut";
+			sourceTree = "<group>";
+		};
+		DAA980B91C0636D200A68DDB /* Kernel */ = {
+			isa = PBXGroup;
+			children = (
+				DAA980BA1C0636D200A68DDB /* ATKernel.h */,
+				DAA980BB1C0636D200A68DDB /* ATKernel.m */,
+			);
+			path = Kernel;
+			sourceTree = "<group>";
+		};
+		DAA980BC1C0636D200A68DDB /* Physics */ = {
+			isa = PBXGroup;
+			children = (
+				DAA980BD1C0636D200A68DDB /* ATEnergy.h */,
+				DAA980BE1C0636D200A68DDB /* ATEnergy.m */,
+				DAA980BF1C0636D200A68DDB /* ATParticle.h */,
+				DAA980C01C0636D200A68DDB /* ATParticle.m */,
+				DAA980C11C0636D200A68DDB /* ATPhysics.h */,
+				DAA980C21C0636D200A68DDB /* ATPhysics.m */,
+				DAA980C31C0636D200A68DDB /* ATSpring.h */,
+				DAA980C41C0636D200A68DDB /* ATSpring.m */,
+			);
+			path = Physics;
+			sourceTree = "<group>";
+		};
+		DAA980C61C0636D200A68DDB /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				DAA980C71C0636D200A68DDB /* ATGeometry.h */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		DAA980C81C0636D200A68DDB /* System */ = {
+			isa = PBXGroup;
+			children = (
+				DAA980C91C0636D200A68DDB /* ATSystem.h */,
+				DAA980CA1C0636D200A68DDB /* ATSystem.m */,
+				DAA980CB1C0636D200A68DDB /* ATSystemParams.h */,
+				DAA980CC1C0636D200A68DDB /* ATSystemParams.m */,
+				DAA980CD1C0636D200A68DDB /* ATSystemRenderer.h */,
+				DAA980CE1C0636D200A68DDB /* ATSystemState.h */,
+				DAA980CF1C0636D200A68DDB /* ATSystemState.m */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		DAA980DE1C06391400A68DDB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DAA980DF1C06393400A68DDB /* AtlasCanvasView.h */,
+				DAA980E01C06393400A68DDB /* AtlasCanvasView.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		F986A3042CDC3617497134AC /* Pods */ = {
@@ -269,12 +409,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA980E11C06393400A68DDB /* AtlasCanvasView.m in Sources */,
 				DA2311951C051BF700279AC7 /* EdgeNode.swift in Sources */,
 				93AAB25D1BCC532E00337E6C /* AppDelegate.swift in Sources */,
+				DAA980D61C0636D200A68DDB /* ATParticle.m in Sources */,
+				DAA980D31C0636D200A68DDB /* ATBarnesHutTree.m in Sources */,
+				DAA980DD1C0636F700A68DDB /* GraphViewControllerArbor.swift in Sources */,
 				93449D8D1BE995EE00081F5E /* GraphViewController.swift in Sources */,
+				DAA980D21C0636D200A68DDB /* ATBarnesHutBranch.m in Sources */,
+				DAA980D51C0636D200A68DDB /* ATEnergy.m in Sources */,
 				93449D8B1BE995C400081F5E /* ListViewController.swift in Sources */,
 				93449D911BE997EE00081F5E /* GraphScene.swift in Sources */,
+				DAA980D41C0636D200A68DDB /* ATKernel.m in Sources */,
+				DAA980D01C0636D200A68DDB /* ATEdge.m in Sources */,
+				DAA980DB1C0636D200A68DDB /* ATSystemState.m in Sources */,
+				DAA980D91C0636D200A68DDB /* ATSystem.m in Sources */,
 				DA2311991C05324400279AC7 /* CircleNode.swift in Sources */,
+				DAA980DA1C0636D200A68DDB /* ATSystemParams.m in Sources */,
+				DAA980D71C0636D200A68DDB /* ATPhysics.m in Sources */,
+				DAA980D81C0636D200A68DDB /* ATSpring.m in Sources */,
+				DAA980D11C0636D200A68DDB /* ATNode.m in Sources */,
 				93AAB2711BCC61BE00337E6C /* FriendshipTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,6 +546,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RD.Origins;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Origins/Origins-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -406,6 +561,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RD.Origins;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Origins/Origins-Bridging-Header.h";
 			};
 			name = Release;
 		};
