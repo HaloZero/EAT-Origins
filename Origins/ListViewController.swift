@@ -20,7 +20,6 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         let filePath : String = NSBundle(forClass: ListViewController.self).pathForResource("friendship", ofType: "json")!
         let data : NSData? = NSData(contentsOfFile: filePath)
         do {

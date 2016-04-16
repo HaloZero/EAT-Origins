@@ -58,9 +58,12 @@ class GraphScene: SKScene {
         for node1 in ballNodes {
             for node2 in ballNodes {
                 if (node1 != node2) {
-                    let newPosition : Vector2D = node1.vectorPosition - node2.vectorPosition
-                    let distance = newPosition.magnitude
-                    let direction = newPosition.normalized
+                    // F = k * ((q1*q2)/r^2) * R
+                    // q1*q2 is the repulsion constant because particles have no charge
+
+                    let newPosition : Vector2D = node2.vectorPosition - node1.vectorPosition
+                    let distance = newPosition.magnitude + 0.1
+                    let direction = Vector2D(newPosition.x / distance, newPosition.y / distance)
 
                     node1.acceleration = node1.acceleration + ((direction*repulsion)/(distance * distance * 0.5))
                     node2.acceleration = node2.acceleration + ((direction*repulsion)/(distance * distance * -0.5))
@@ -72,7 +75,7 @@ class GraphScene: SKScene {
         for edgeNode in edgeNodes {
             let newDirection = edgeNode.node2.vectorPosition - edgeNode.node1.vectorPosition
             // TODO: This seems wrong, displacement is just too large. Springy is somehow able to do some math that I'm missing I believe.
-            let displacement = max(min(50 - newDirection.magnitude, 50, 50), -50)
+            let displacement = 50 - newDirection.magnitude
             let direction = newDirection.normalized
 
             edgeNode.node1.acceleration = edgeNode.node1.acceleration + (direction * stiffness * displacement * -0.5)
@@ -90,12 +93,16 @@ class GraphScene: SKScene {
 
 
         // Mark : Update Positions after force calculations
+        print("pass\n\n")
         for node in ballNodes {
+            print(node.acceleration)
+
             node.velocity = node.velocity + node.acceleration*1*damping
             node.acceleration = Vector2D(0,0)
         }
 
         for node in ballNodes {
+//            print(node.velocity)
             node.vectorPosition = node.vectorPosition + node.velocity * 1
             node.position = CGPoint(x:node.vectorPosition.x, y: node.vectorPosition.y)
         }
