@@ -99,7 +99,6 @@
         
         // Drawing code for particle centers
         for (ATParticle *particle in self.system.physics.particles) {
-            
             [self drawParticleText:particle inContext:context];
             
 //            [self drawParticle:particle inContext:context];            
@@ -207,7 +206,7 @@
     
     
     // Fill in the rect with current fill color
-    CGContextSetFillColorWithColor(context, [[UIColor clearColor] CGColor]);
+    CGContextSetFillColorWithColor(context, [[UIColor greenColor] CGColor]);
     CGContextFillRect(context, fillRect);
     
     // Set the text fill color

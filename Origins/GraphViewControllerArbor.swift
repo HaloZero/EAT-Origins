@@ -76,12 +76,12 @@ class GraphViewControllerArbor : UIViewController {
             print("Don't care")
         }
 
-        var newFriendNames = friendships.map({ (friendship) -> String in
+        let newFriendNames = friendships.map({ (friendship) -> String in
             var friendshipJSON = JSON(friendship)
             return friendshipJSON["new_friend"]["name"].stringValue
         })
 
-        var originalFriendNames = friendships.map({ (friendship) -> String in
+        let originalFriendNames = friendships.map({ (friendship) -> String in
             var friendshipJSON = JSON(friendship)
             return friendshipJSON["original_friend"]["name"].stringValue
         })
@@ -92,16 +92,17 @@ class GraphViewControllerArbor : UIViewController {
         }
 
         for name in nameSet {
-            self.system.addNode(name, withData: nil)
+            if (name.characters.count != 0) {
+                self.system.addNode(name.substringWithRange(Range(start: name.startIndex, end: name.startIndex.advancedBy(2))), withData: nil)
+            }
         }
 
         for friendshipEdge in friendships[0...5] {
             let friendshipJSON = JSON(friendshipEdge)
-            print(friendshipJSON)
             let newFriendName = friendshipJSON["new_friend"]["name"].stringValue
             let originalFriendName = friendshipJSON["original_friend"]["name"].stringValue
 
-//            self.system.addEdgeFromNode(newFriendName, toNode: originalFriendName, withData: nil)
+            self.system.addEdgeFromNode(newFriendName, toNode: originalFriendName, withData: nil)
         }
     }
 }
