@@ -42,20 +42,23 @@ class FriendshipTableViewCell: UITableViewCell {
 
         self.originalFriendImageView.af_setImageWithURL(
             NSURL(string: originalFriend["picture"].stringValue)!,
+            placeholderImage: UIImage(named: "person-placeholder"),
             filter: roundedFilter
         )
+
         self.newFriendImageView.af_setImageWithURL(
             NSURL(string: newFriend["picture"].stringValue)!,
-            placeholderImage: nil, filter: roundedFilter
+            placeholderImage: UIImage(named: "person-placeholder"),
+            filter: roundedFilter
         )
 
         self.originalFriendName.text = originalFriend["name"].string;
         self.newFriendName.text = newFriend["name"].string;
+
         self.linkLine.backgroundColor = UIColor.greenColor();
         self.friendshipTypeImageView.image = UIImage(named: friendship["type"].stringValue.lowercaseString);
         if (self.friendshipTypeImageView.image != nil) {
             self.friendshipTypeImageView.backgroundColor = UIColor.whiteColor();
         }
-
     }
 }
