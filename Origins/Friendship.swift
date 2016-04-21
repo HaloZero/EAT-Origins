@@ -18,7 +18,8 @@ enum FriendshipType : String {
     case Friends
     case Work
     case Random
-
+    case Party
+    
     func image() -> UIImage? {
         switch self {
         case .College: return UIImage(named: "college")

@@ -9,13 +9,12 @@
 import UIKit
 import SwiftyJSON
 
-class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchControllerDelegate, UISearchResultsUpdating {
+class ListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
     var friendships: [Friendship] = []
     var fullFriendshipList: [Friendship] = []
-    var searchController: UISearchController? = nil;
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,40 +26,22 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
             self.friendships = try [Friendship].decode(json)
             self.fullFriendshipList = self.friendships;
         } catch {
-            print("Don't care")
+            print(error)
         }
 
         self.tableView.registerNib(UINib.init(nibName: "FriendshipTableViewCell", bundle: nil), forCellReuseIdentifier: "FriendshipCell");
 
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.tableView.estimatedRowHeight = 100;
-        self.tableView.rowHeight = UITableViewAutomaticDimension;
-
-        // TODO: This pattern sucks, how do I avoid that initialization method?
-        // I don't want to have to do a! on this call to make sure there's a local variable that I don't have to do ! for, but I also don't want to initialize this in the self class.        
-        self.searchController = UISearchController(searchResultsController: nil)
-
-        let searchController = self.searchController!
-        searchController.searchResultsUpdater = self;
-        searchController.dimsBackgroundDuringPresentation = false;
+        self.tableView.estimatedRowHeight = 100
+        self.tableView.rowHeight = UITableViewAutomaticDimension
 
         self.tableView.tableHeaderView = searchController.searchBar;
         self.definesPresentationContext = true;
     }
+}
 
-    func updateSearchResultsForSearchController(searchController: UISearchController) {
-        if (searchController.searchBar.text == nil || searchController.searchBar.text!.isEmpty) {
-//            self.friendships = self.fullFriendshipList;
-        } else {
-//            self.friendships = self.fullFriendshipList.filter({ (friendship: AnyObject) -> Bool in
-//                let newFriendName : String = JSON(friendship)["new_friend"]["name"].stringValue
-//                let originalFriendName : String = JSON(friendship)["original_friend"]["name"].stringValue
-//                return newFriendName.containsString(searchController.searchBar.text!) || originalFriendName.containsString(searchController.searchBar.text!)
-//            })
-        }
-        self.tableView.reloadData()
-    }
+extension ListViewController : UITableViewDelegate, UITableViewDataSource {
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.friendships.count;
@@ -68,12 +49,35 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell : FriendshipTableViewCell =
-        self.tableView.dequeueReusableCellWithIdentifier("FriendshipCell", forIndexPath: indexPath) as! FriendshipTableViewCell
+            self.tableView.dequeueReusableCellWithIdentifier("FriendshipCell", forIndexPath: indexPath) as! FriendshipTableViewCell
 
-        cell.configureFromFriendship(self.friendships[indexPath.row]);
+        cell.configureFromFriendship(self.friendships[indexPath.row])
 
         return cell;
-
+        
     }
 }
 
+extension ListViewController : UISearchControllerDelegate, UISearchResultsUpdating {
+    var searchController: UISearchController {
+        get {
+            let searchController = UISearchController(searchResultsController: nil)
+            searchController.searchResultsUpdater = self;
+            searchController.dimsBackgroundDuringPresentation = false;
+            return searchController
+        }
+    }
+
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        if (searchController.searchBar.text == nil || searchController.searchBar.text!.isEmpty) {
+            self.friendships = self.fullFriendshipList;
+        } else {
+            self.friendships = self.fullFriendshipList.filter({ (friendship: Friendship) -> Bool in
+                let newFriendName = friendship.newFriend.name
+                let originalFriendName = friendship.oldFriend.name
+                return newFriendName.containsString(searchController.searchBar.text!) || originalFriendName.containsString(searchController.searchBar.text!)
+            })
+        }
+        self.tableView.reloadData()
+    }
+}
