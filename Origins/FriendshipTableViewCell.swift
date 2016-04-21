@@ -18,8 +18,11 @@ class FriendshipTableViewCell: UITableViewCell {
     @IBOutlet weak var originalFriendName: UILabel!
 
     @IBOutlet weak var friendshipTypeImageView: UIImageView!
-    @IBOutlet weak var linkLine: UIView!
 
+    @IBOutlet weak var leftLinkLine: UIView!
+    @IBOutlet weak var rightLinkLine: UIView!
+    @IBOutlet weak var rightLinkLineWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var leftLinkLineWidthConstraint: NSLayoutConstraint!
     @IBOutlet weak var newFriendImageView: UIImageView!
     @IBOutlet weak var newFriendName: UILabel!
 
@@ -33,37 +36,9 @@ class FriendshipTableViewCell: UITableViewCell {
         self.originalFriendImageView.image = nil
     }
 
-    func configureFromFriendship(friendship: JSON) {
-        let originalFriend: JSON = JSON(friendship["original_friend"].dictionaryValue)
-        let newFriend: JSON = JSON(friendship["new_friend"].dictionaryValue)
-        self.storyLabel.text = friendship["story"].stringValue
-
-        let roundedFilter: ImageFilter = RoundedCornersFilter(radius: self.originalFriendImageView.frame.size.height);
-
-        self.originalFriendImageView.af_setImageWithURL(
-            NSURL(string: originalFriend["picture"].stringValue)!,
-            placeholderImage: UIImage(named: "person-placeholder"),
-            filter: roundedFilter
-        )
-
-        self.newFriendImageView.af_setImageWithURL(
-            NSURL(string: newFriend["picture"].stringValue)!,
-            placeholderImage: UIImage(named: "person-placeholder"),
-            filter: roundedFilter
-        )
-
-        self.originalFriendName.text = originalFriend["name"].string;
-        self.newFriendName.text = newFriend["name"].string;
-
-        self.linkLine.backgroundColor = UIColor.greenColor();
-        self.friendshipTypeImageView.image = UIImage(named: friendship["type"].stringValue.lowercaseString);
-        if (self.friendshipTypeImageView.image != nil) {
-            self.friendshipTypeImageView.backgroundColor = UIColor.whiteColor();
-        }
-    }
-
+    @IBOutlet weak var blah: NSLayoutConstraint!
     func configureFromFriendship(friendship: Friendship) {
-        self.storyLabel.text = friendship.story
+        storyLabel.text = friendship.story
 
         let roundedFilter: ImageFilter = RoundedCornersFilter(radius: self.originalFriendImageView.frame.size.height);
 
@@ -82,11 +57,22 @@ class FriendshipTableViewCell: UITableViewCell {
         self.originalFriendName.text = friendship.oldFriend.name
         self.newFriendName.text = friendship.newFriend.name
 
-        self.linkLine.backgroundColor = UIColor.greenColor();
+        self.leftLinkLineWidthConstraint.constant = 0
+        //        self.rightLinkLineWidthConstraint.constant = 0
+        self.leftLinkLine.layoutIfNeeded()
+//        UIView.animateWithDuration(1.5, animations: {
+//            let newWidth = CGFloat(83)
+//////            let newWidth = (self.rightLinkLine.frame.origin.x + self.rightLinkLine.frame.size.width - self.leftLinkLine.frame.origin.x)/2
+//            self.leftLinkLineWidthConstraint.constant = newWidth
+////            self.rightLinkLineWidthConstraint.constant = newWidth
+//            self.leftLinkLine.layoutIfNeeded()
+//        })
+
         if let image = friendship.friendshipType?.image() {
             self.friendshipTypeImageView.image = image
             self.friendshipTypeImageView.backgroundColor = UIColor.whiteColor();
         }
+
 
     }
 }

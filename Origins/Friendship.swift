@@ -33,6 +33,10 @@ enum FriendshipType : String {
 struct User {
     let name: String
     let profilePictureURL: NSURL
+
+    static func fakeUser() -> User {
+        return User(name: "Nothing", profilePictureURL: NSURL())
+    }
 }
 
 extension User : Decodable {

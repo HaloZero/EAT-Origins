@@ -19,15 +19,8 @@ class ListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let filePath : String = NSBundle(forClass: ListViewController.self).pathForResource("friendship", ofType: "json")!
-        let data : NSData? = NSData(contentsOfFile: filePath)
-        do {
-            let json = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions(rawValue: 0)) as! [AnyObject];
-            self.friendships = try [Friendship].decode(json)
-            self.fullFriendshipList = self.friendships;
-        } catch {
-            print(error)
-        }
+        self.friendships = DataManager.sharedInstance.friendships
+        self.fullFriendshipList = self.friendships
 
         self.tableView.registerNib(UINib.init(nibName: "FriendshipTableViewCell", bundle: nil), forCellReuseIdentifier: "FriendshipCell");
 
@@ -35,6 +28,8 @@ class ListViewController: UIViewController {
         self.tableView.dataSource = self
         self.tableView.estimatedRowHeight = 100
         self.tableView.rowHeight = UITableViewAutomaticDimension
+
+        self.tableView.reloadData()
 
         self.tableView.tableHeaderView = searchController.searchBar;
         self.definesPresentationContext = true;
@@ -52,9 +47,18 @@ extension ListViewController : UITableViewDelegate, UITableViewDataSource {
             self.tableView.dequeueReusableCellWithIdentifier("FriendshipCell", forIndexPath: indexPath) as! FriendshipTableViewCell
 
         cell.configureFromFriendship(self.friendships[indexPath.row])
-
         return cell;
-        
+    }
+
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let user = self.friendships[indexPath.row].newFriend
+        let profileViewController = ProfileViewController(user: user)
+        self.presentViewController(profileViewController, animated: true, completion: nil)
+    }
+
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        let cell : FriendshipTableViewCell =
+            self.tableView.dequeueReusableCellWithIdentifier("FriendshipCell", forIndexPath: indexPath) as! FriendshipTableViewCell
     }
 }
 
@@ -62,8 +66,9 @@ extension ListViewController : UISearchControllerDelegate, UISearchResultsUpdati
     var searchController: UISearchController {
         get {
             let searchController = UISearchController(searchResultsController: nil)
-            searchController.searchResultsUpdater = self;
-            searchController.dimsBackgroundDuringPresentation = false;
+            searchController.searchResultsUpdater = self
+            searchController.dimsBackgroundDuringPresentation = false
+            searchController.searchBar.backgroundColor = UIColor.lightGrayColor()
             return searchController
         }
     }
