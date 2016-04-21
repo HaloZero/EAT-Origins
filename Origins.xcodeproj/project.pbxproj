@@ -18,6 +18,7 @@
 		93AAB2671BCC532E00337E6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AAB2651BCC532E00337E6C /* LaunchScreen.storyboard */; };
 		93AAB2711BCC61BE00337E6C /* FriendshipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AAB2701BCC61BE00337E6C /* FriendshipTableViewCell.swift */; };
 		93AAB2731BCC64F400337E6C /* FriendshipTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93AAB2721BCC64F400337E6C /* FriendshipTableViewCell.xib */; };
+		93BD87071CC8319400ADE9FC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD87061CC8319400ADE9FC /* ProfileViewController.swift */; };
 		D9E25BC5232BF1760071C6E7 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E08E400E6E2449E949F4484 /* Pods.framework */; };
 		DA2311951C051BF700279AC7 /* EdgeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2311941C051BF700279AC7 /* EdgeNode.swift */; };
 		DA2311991C05324400279AC7 /* CircleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2311981C05324400279AC7 /* CircleNode.swift */; };
@@ -52,6 +53,7 @@
 		93AAB2681BCC532E00337E6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93AAB2701BCC61BE00337E6C /* FriendshipTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendshipTableViewCell.swift; sourceTree = "<group>"; };
 		93AAB2721BCC64F400337E6C /* FriendshipTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendshipTableViewCell.xib; sourceTree = "<group>"; };
+		93BD87061CC8319400ADE9FC /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C353476BBA107714A4E021B4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CBBD1E402982C6E6C3EFADAA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DA2311941C051BF700279AC7 /* EdgeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EdgeNode.swift; path = Graph/EdgeNode.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				93449D8C1BE995EE00081F5E /* GraphViewController.swift */,
 				DAA980DC1C0636F700A68DDB /* GraphViewControllerArbor.swift */,
 				93449D8A1BE995C400081F5E /* ListViewController.swift */,
+				93BD87061CC8319400ADE9FC /* ProfileViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				DAA980D61C0636D200A68DDB /* ATParticle.m in Sources */,
 				DAA980D31C0636D200A68DDB /* ATBarnesHutTree.m in Sources */,
 				DAA980DD1C0636F700A68DDB /* GraphViewControllerArbor.swift in Sources */,
+				93BD87071CC8319400ADE9FC /* ProfileViewController.swift in Sources */,
 				93449D8D1BE995EE00081F5E /* GraphViewController.swift in Sources */,
 				DAA980D21C0636D200A68DDB /* ATBarnesHutBranch.m in Sources */,
 				DAA980D51C0636D200A68DDB /* ATEnergy.m in Sources */,
