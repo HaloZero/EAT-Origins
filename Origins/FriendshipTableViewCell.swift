@@ -58,16 +58,8 @@ class FriendshipTableViewCell: UITableViewCell {
         self.newFriendName.text = friendship.newFriend.name
 
         self.leftLinkLineWidthConstraint.constant = 0
-        //        self.rightLinkLineWidthConstraint.constant = 0
-        self.leftLinkLine.layoutIfNeeded()
-//        UIView.animateWithDuration(1.5, animations: {
-//            let newWidth = CGFloat(83)
-//////            let newWidth = (self.rightLinkLine.frame.origin.x + self.rightLinkLine.frame.size.width - self.leftLinkLine.frame.origin.x)/2
-//            self.leftLinkLineWidthConstraint.constant = newWidth
-////            self.rightLinkLineWidthConstraint.constant = newWidth
-//            self.leftLinkLine.layoutIfNeeded()
-//        })
-
+        self.rightLinkLineWidthConstraint.constant = 0
+        
         if let image = friendship.friendshipType?.image() {
             self.friendshipTypeImageView.image = image
             self.friendshipTypeImageView.backgroundColor = UIColor.whiteColor();
