@@ -61,4 +61,32 @@ class FriendshipTableViewCell: UITableViewCell {
             self.friendshipTypeImageView.backgroundColor = UIColor.whiteColor();
         }
     }
+
+    func configureFromFriendship(friendship: Friendship) {
+        self.storyLabel.text = friendship.story
+
+        let roundedFilter: ImageFilter = RoundedCornersFilter(radius: self.originalFriendImageView.frame.size.height);
+
+        self.originalFriendImageView.af_setImageWithURL(
+            friendship.oldFriend.profilePictureURL,
+            placeholderImage: UIImage(named: "person-placeholder"),
+            filter: roundedFilter
+        )
+
+        self.newFriendImageView.af_setImageWithURL(
+            friendship.newFriend.profilePictureURL,
+            placeholderImage: UIImage(named: "person-placeholder"),
+            filter: roundedFilter
+        )
+
+        self.originalFriendName.text = friendship.oldFriend.name
+        self.newFriendName.text = friendship.newFriend.name
+
+        self.linkLine.backgroundColor = UIColor.greenColor();
+        if let image = friendship.friendshipType?.image() {
+            self.friendshipTypeImageView.image = image
+            self.friendshipTypeImageView.backgroundColor = UIColor.whiteColor();
+        }
+
+    }
 }

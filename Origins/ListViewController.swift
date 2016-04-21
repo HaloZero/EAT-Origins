@@ -13,8 +13,8 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     @IBOutlet weak var tableView: UITableView!
 
-    var friendships: [AnyObject] = []
-    var fullFriendshipList: [AnyObject] = []
+    var friendships: [Friendship] = []
+    var fullFriendshipList: [Friendship] = []
     var searchController: UISearchController? = nil;
 
     override func viewDidLoad() {
@@ -23,12 +23,8 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         let filePath : String = NSBundle(forClass: ListViewController.self).pathForResource("friendship", ofType: "json")!
         let data : NSData? = NSData(contentsOfFile: filePath)
         do {
-            try self.friendships = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions(rawValue: 0)) as! [AnyObject];
-            self.friendships.sortInPlace({ (Object1, Object2) -> Bool in
-                let friendship1: JSON = JSON(Object1)
-                let friendship2:JSON  = JSON(Object2)
-                return friendship1["new_friend"]["name"].stringValue < friendship2["new_friend"]["name"].stringValue
-            })
+            let json = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions(rawValue: 0)) as! [AnyObject];
+            self.friendships = try [Friendship].decode(json)
             self.fullFriendshipList = self.friendships;
         } catch {
             print("Don't care")
@@ -55,13 +51,13 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     func updateSearchResultsForSearchController(searchController: UISearchController) {
         if (searchController.searchBar.text == nil || searchController.searchBar.text!.isEmpty) {
-            self.friendships = self.fullFriendshipList;
+//            self.friendships = self.fullFriendshipList;
         } else {
-            self.friendships = self.fullFriendshipList.filter({ (friendship: AnyObject) -> Bool in
-                let newFriendName : String = JSON(friendship)["new_friend"]["name"].stringValue
-                let originalFriendName : String = JSON(friendship)["original_friend"]["name"].stringValue
-                return newFriendName.containsString(searchController.searchBar.text!) || originalFriendName.containsString(searchController.searchBar.text!)
-            })
+//            self.friendships = self.fullFriendshipList.filter({ (friendship: AnyObject) -> Bool in
+//                let newFriendName : String = JSON(friendship)["new_friend"]["name"].stringValue
+//                let originalFriendName : String = JSON(friendship)["original_friend"]["name"].stringValue
+//                return newFriendName.containsString(searchController.searchBar.text!) || originalFriendName.containsString(searchController.searchBar.text!)
+//            })
         }
         self.tableView.reloadData()
     }
@@ -74,9 +70,8 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell : FriendshipTableViewCell =
         self.tableView.dequeueReusableCellWithIdentifier("FriendshipCell", forIndexPath: indexPath) as! FriendshipTableViewCell
 
-        let friendship: JSON = JSON(self.friendships[indexPath.row])
-        cell.configureFromFriendship(friendship);
-        
+        cell.configureFromFriendship(self.friendships[indexPath.row]);
+
         return cell;
 
     }

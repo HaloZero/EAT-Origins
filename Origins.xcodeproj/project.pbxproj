@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		931C5BC91BCCA56C00746712 /* friendship.json in Resources */ = {isa = PBXBuildFile; fileRef = 931C5BC81BCCA56C00746712 /* friendship.json */; };
+		931C5BC91BCCA56C00746712 /* friendship-spreadsheet.json in Resources */ = {isa = PBXBuildFile; fileRef = 931C5BC81BCCA56C00746712 /* friendship-spreadsheet.json */; };
 		93449D8B1BE995C400081F5E /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449D8A1BE995C400081F5E /* ListViewController.swift */; };
 		93449D8D1BE995EE00081F5E /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449D8C1BE995EE00081F5E /* GraphViewController.swift */; };
 		93449D8F1BE9971600081F5E /* GraphScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 93449D8E1BE9971600081F5E /* GraphScene.sks */; };
@@ -22,6 +22,8 @@
 		D9E25BC5232BF1760071C6E7 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E08E400E6E2449E949F4484 /* Pods.framework */; };
 		DA2311951C051BF700279AC7 /* EdgeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2311941C051BF700279AC7 /* EdgeNode.swift */; };
 		DA2311991C05324400279AC7 /* CircleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2311981C05324400279AC7 /* CircleNode.swift */; };
+		DAA79F9C1CC88276002EFCA8 /* friendship.json in Resources */ = {isa = PBXBuildFile; fileRef = DAA79F9B1CC88276002EFCA8 /* friendship.json */; };
+		DAA79F9E1CC88568002EFCA8 /* Friendship.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA79F9D1CC88568002EFCA8 /* Friendship.swift */; };
 		DAA980D01C0636D200A68DDB /* ATEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA980B11C0636D200A68DDB /* ATEdge.m */; };
 		DAA980D11C0636D200A68DDB /* ATNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA980B31C0636D200A68DDB /* ATNode.m */; };
 		DAA980D21C0636D200A68DDB /* ATBarnesHutBranch.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA980B61C0636D200A68DDB /* ATBarnesHutBranch.m */; };
@@ -40,7 +42,7 @@
 
 /* Begin PBXFileReference section */
 		4E08E400E6E2449E949F4484 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		931C5BC81BCCA56C00746712 /* friendship.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = friendship.json; sourceTree = "<group>"; };
+		931C5BC81BCCA56C00746712 /* friendship-spreadsheet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "friendship-spreadsheet.json"; sourceTree = "<group>"; };
 		93449D8A1BE995C400081F5E /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		93449D8C1BE995EE00081F5E /* GraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		93449D8E1BE9971600081F5E /* GraphScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GraphScene.sks; sourceTree = "<group>"; };
@@ -58,6 +60,8 @@
 		CBBD1E402982C6E6C3EFADAA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DA2311941C051BF700279AC7 /* EdgeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EdgeNode.swift; path = Graph/EdgeNode.swift; sourceTree = "<group>"; };
 		DA2311981C05324400279AC7 /* CircleNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircleNode.swift; path = Graph/CircleNode.swift; sourceTree = "<group>"; };
+		DAA79F9B1CC88276002EFCA8 /* friendship.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = friendship.json; sourceTree = "<group>"; };
+		DAA79F9D1CC88568002EFCA8 /* Friendship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friendship.swift; sourceTree = "<group>"; };
 		DAA980B01C0636D200A68DDB /* ATEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATEdge.h; sourceTree = "<group>"; };
 		DAA980B11C0636D200A68DDB /* ATEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATEdge.m; sourceTree = "<group>"; };
 		DAA980B21C0636D200A68DDB /* ATNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATNode.h; sourceTree = "<group>"; };
@@ -117,7 +121,8 @@
 			children = (
 				DAA980E31C063A3600A68DDB /* Origins-Bridging-Header.h */,
 				93AAB2631BCC532E00337E6C /* Assets.xcassets */,
-				931C5BC81BCCA56C00746712 /* friendship.json */,
+				DAA79F9B1CC88276002EFCA8 /* friendship.json */,
+				931C5BC81BCCA56C00746712 /* friendship-spreadsheet.json */,
 				93AAB2681BCC532E00337E6C /* Info.plist */,
 			);
 			name = Resources;
@@ -140,6 +145,7 @@
 				DAA980DC1C0636F700A68DDB /* GraphViewControllerArbor.swift */,
 				93449D8A1BE995C400081F5E /* ListViewController.swift */,
 				93BD87061CC8319400ADE9FC /* ProfileViewController.swift */,
+				DAA79F9D1CC88568002EFCA8 /* Friendship.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -352,7 +358,8 @@
 				93AAB2641BCC532E00337E6C /* Assets.xcassets in Resources */,
 				93AAB2621BCC532E00337E6C /* Main.storyboard in Resources */,
 				93AAB2731BCC64F400337E6C /* FriendshipTableViewCell.xib in Resources */,
-				931C5BC91BCCA56C00746712 /* friendship.json in Resources */,
+				931C5BC91BCCA56C00746712 /* friendship-spreadsheet.json in Resources */,
+				DAA79F9C1CC88276002EFCA8 /* friendship.json in Resources */,
 				93449D8F1BE9971600081F5E /* GraphScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +432,7 @@
 				93449D8B1BE995C400081F5E /* ListViewController.swift in Sources */,
 				93449D911BE997EE00081F5E /* GraphScene.swift in Sources */,
 				DAA980D41C0636D200A68DDB /* ATKernel.m in Sources */,
+				DAA79F9E1CC88568002EFCA8 /* Friendship.swift in Sources */,
 				DAA980D01C0636D200A68DDB /* ATEdge.m in Sources */,
 				DAA980DB1C0636D200A68DDB /* ATSystemState.m in Sources */,
 				DAA980D91C0636D200A68DDB /* ATSystem.m in Sources */,
