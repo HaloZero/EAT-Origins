@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Objective-C dependency manager
-gem 'cocoapods', "0.38.2"
+gem 'cocoapods'
 
 # used to sync FileSystem and Xcode File Structure
 gem 'synx'
