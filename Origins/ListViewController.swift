@@ -31,8 +31,14 @@ class ListViewController: UIViewController {
 
         self.tableView.reloadData()
 
-        self.tableView.tableHeaderView = searchController.searchBar;
-        self.definesPresentationContext = true;
+        self.tableView.tableHeaderView = searchController.searchBar
+        self.definesPresentationContext = true
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
+        self.tableView.reloadData()
     }
 }
 
@@ -47,6 +53,25 @@ extension ListViewController : UITableViewDelegate, UITableViewDataSource {
             self.tableView.dequeueReusableCellWithIdentifier("FriendshipCell", forIndexPath: indexPath) as! FriendshipTableViewCell
 
         cell.configureFromFriendship(self.friendships[indexPath.row])
+
+        cell.friendshipTypeImageView.alpha = 0.0
+
+        cell.contentView.layoutIfNeeded()
+
+        UIView.animateWithDuration(
+            1.5,
+            animations: {
+                cell.leftLinkLineWidthConstraint.constant = 100
+                cell.rightLinkLineWidthConstraint.constant = 100
+                cell.contentView.layoutIfNeeded()
+            },
+            completion: { _ in
+                UIView.animateWithDuration(0.25, animations: {
+                    cell.friendshipTypeImageView.alpha = 1.0
+                })
+            }
+        )
+
         return cell;
     }
 
@@ -59,6 +84,7 @@ extension ListViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         let cell : FriendshipTableViewCell =
             self.tableView.dequeueReusableCellWithIdentifier("FriendshipCell", forIndexPath: indexPath) as! FriendshipTableViewCell
+
     }
 }
 

@@ -59,11 +59,13 @@ class FriendshipTableViewCell: UITableViewCell {
 
         self.leftLinkLineWidthConstraint.constant = 0
         self.rightLinkLineWidthConstraint.constant = 0
-        
+
+
         if let image = friendship.friendshipType?.image() {
             self.friendshipTypeImageView.image = image
-            self.friendshipTypeImageView.backgroundColor = UIColor.whiteColor();
+            self.friendshipTypeImageView.backgroundColor = UIColor.clearColor()
         }
+
 
 
     }
