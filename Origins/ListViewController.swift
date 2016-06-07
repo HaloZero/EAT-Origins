@@ -26,13 +26,26 @@ class ListViewController: UIViewController {
 
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.tableView.estimatedRowHeight = 100
+        self.tableView.estimatedRowHeight = 200
         self.tableView.rowHeight = UITableViewAutomaticDimension
 
         self.tableView.reloadData()
 
+        let searchController = self.searchController
+
         self.tableView.tableHeaderView = searchController.searchBar
+        searchController.searchResultsUpdater = self
+        searchController.delegate = self
+
         self.definesPresentationContext = true
+    }
+
+
+    deinit{
+        if let superView = searchController.view.superview
+        {
+            superView.removeFromSuperview()
+        }
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -54,6 +67,11 @@ extension ListViewController : UITableViewDelegate, UITableViewDataSource {
 
         cell.configureFromFriendship(self.friendships[indexPath.row])
 
+        animateCell(cell)
+        return cell
+    }
+
+    func animateCell(cell: FriendshipTableViewCell) {
         cell.friendshipTypeImageView.alpha = 0.0
 
         cell.contentView.layoutIfNeeded()
@@ -71,8 +89,6 @@ extension ListViewController : UITableViewDelegate, UITableViewDataSource {
                 })
             }
         )
-
-        return cell;
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -89,10 +105,11 @@ extension ListViewController : UITableViewDelegate, UITableViewDataSource {
 }
 
 extension ListViewController : UISearchControllerDelegate, UISearchResultsUpdating {
-    var searchController: UISearchController {
+    var searchController: UISearchController! {
         get {
             let searchController = UISearchController(searchResultsController: nil)
             searchController.searchResultsUpdater = self
+            searchController.delegate = self
             searchController.dimsBackgroundDuringPresentation = false
             searchController.searchBar.backgroundColor = UIColor.lightGrayColor()
             return searchController

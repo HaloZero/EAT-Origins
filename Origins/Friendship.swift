@@ -10,11 +10,11 @@ import Foundation
 import Decodable
 
 enum FriendshipType : String {
-    case College
-    case Dodgeball
-    case Family
-    case Romantic
-    case Sports
+    case College = "college"
+    case Dodgeball = "dodgeball"
+    case Family = "family"
+    case Romantic = "romantic"
+    case Sports 
     case Friends
     case Work
     case Random
@@ -25,6 +25,7 @@ enum FriendshipType : String {
         case .College: return UIImage(named: "college")
         case .Romantic: return UIImage(named: "heart")
         case .Friends: return UIImage(named: "user")
+        case .Dodgeball: return UIImage(named: "dodgeball")
         default: return nil
         }
     }

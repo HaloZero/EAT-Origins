@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="190" id="5Oi-wy-FvM" customClass="FriendshipTableViewCell" customModule="Origins" customModuleProvider="target">
+        <tableViewCell autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="200" id="5Oi-wy-FvM" customClass="FriendshipTableViewCell" customModule="Origins" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="350" height="190"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Oi-wy-FvM" id="P6I-6Y-5Eg">
@@ -15,20 +15,20 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Friend Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUO-pT-9qj">
-                        <rect key="frame" x="8" y="18" width="108" height="20"/>
+                        <rect key="frame" x="8" y="18" width="108" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zxf-mc-Gbv">
-                        <rect key="frame" x="8" y="43" width="75" height="75"/>
+                        <rect key="frame" x="8" y="39" width="75" height="75"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="75" id="OIP-qM-qMG"/>
                             <constraint firstAttribute="height" constant="75" id="ThX-bg-qNI"/>
                         </constraints>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MNa-kM-Muy">
-                        <rect key="frame" x="267" y="43" width="75" height="75"/>
+                        <rect key="frame" x="267" y="39" width="75" height="75"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="75" id="xW4-PY-h56"/>
                             <constraint firstAttribute="height" constant="75" id="ywx-kG-oF3"/>
@@ -55,7 +55,7 @@
                         </variation>
                     </label>
                     <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ljr-Ct-4jR">
-                        <rect key="frame" x="91" y="68" width="83" height="10"/>
+                        <rect key="frame" x="91" y="64" width="83" height="10"/>
                         <color key="backgroundColor" red="0.8392156959" green="0.31764706970000001" blue="0.23137255009999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="83" id="KrJ-e0-W8V"/>
@@ -63,7 +63,7 @@
                         </constraints>
                     </view>
                     <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EoY-Vd-ktl">
-                        <rect key="frame" x="176" y="68" width="83" height="10"/>
+                        <rect key="frame" x="176" y="64" width="83" height="10"/>
                         <color key="backgroundColor" red="0.8392156959" green="0.31764706970000001" blue="0.23137255009999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="83" id="3cf-7b-5rL"/>
@@ -71,14 +71,14 @@
                         </constraints>
                     </view>
                     <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JSy-WS-lRo">
-                        <rect key="frame" x="160" y="58" width="30" height="30"/>
+                        <rect key="frame" x="160" y="54" width="30" height="30"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="DBW-Wi-GFY"/>
                             <constraint firstAttribute="width" constant="30" id="c83-4C-GhB"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Original Friend Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okR-1D-EWZ">
-                        <rect key="frame" x="214" y="123" width="128" height="16"/>
+                        <rect key="frame" x="214" y="119" width="128" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -101,13 +101,13 @@
                     <constraint firstItem="JSy-WS-lRo" firstAttribute="top" secondItem="ljr-Ct-4jR" secondAttribute="top" constant="-10" id="OpX-8M-L8s"/>
                     <constraint firstAttribute="trailingMargin" secondItem="s1C-Ss-RM3" secondAttribute="trailing" constant="97" id="P1m-RL-b4T"/>
                     <constraint firstItem="MNa-kM-Muy" firstAttribute="leading" secondItem="s1C-Ss-RM3" secondAttribute="trailing" constant="20" id="PGp-Cq-ciY"/>
-                    <constraint firstItem="s1C-Ss-RM3" firstAttribute="top" secondItem="zxf-mc-Gbv" secondAttribute="bottom" constant="25" id="SsI-jL-7vh"/>
                     <constraint firstItem="s1C-Ss-RM3" firstAttribute="leading" secondItem="P6I-6Y-5Eg" secondAttribute="leadingMargin" constant="30" id="WIU-DD-mIk"/>
                     <constraint firstAttribute="topMargin" secondItem="BUO-pT-9qj" secondAttribute="top" id="WY1-3z-1RJ"/>
                     <constraint firstItem="okR-1D-EWZ" firstAttribute="trailing" secondItem="MNa-kM-Muy" secondAttribute="trailing" id="Zm3-aK-cjY"/>
                     <constraint firstAttribute="bottomMargin" secondItem="MNa-kM-Muy" secondAttribute="bottom" priority="500" constant="10" id="cId-dY-iXZ"/>
                     <constraint firstItem="MNa-kM-Muy" firstAttribute="width" secondItem="zxf-mc-Gbv" secondAttribute="width" id="d1e-49-OzX"/>
                     <constraint firstItem="JSy-WS-lRo" firstAttribute="top" secondItem="P6I-6Y-5Eg" secondAttribute="topMargin" constant="21" id="dKQ-wd-anN"/>
+                    <constraint firstItem="zxf-mc-Gbv" firstAttribute="leading" secondItem="BUO-pT-9qj" secondAttribute="leading" id="gEj-6a-jUO"/>
                     <constraint firstItem="MNa-kM-Muy" firstAttribute="leading" secondItem="P6I-6Y-5Eg" secondAttribute="leadingMargin" constant="259" id="hVc-tL-4ts"/>
                     <constraint firstItem="s1C-Ss-RM3" firstAttribute="leading" secondItem="zxf-mc-Gbv" secondAttribute="trailing" constant="20" id="lKi-f6-Q0f"/>
                     <constraint firstItem="MNa-kM-Muy" firstAttribute="leading" secondItem="ljr-Ct-4jR" secondAttribute="trailing" constant="8" id="mfj-uT-FZi"/>
@@ -118,14 +118,19 @@
                     <constraint firstItem="MNa-kM-Muy" firstAttribute="top" secondItem="zxf-mc-Gbv" secondAttribute="top" id="qDW-xw-9LH"/>
                     <constraint firstItem="s1C-Ss-RM3" firstAttribute="top" secondItem="zxf-mc-Gbv" secondAttribute="bottom" constant="25" id="qSQ-EG-OcI"/>
                     <constraint firstItem="JSy-WS-lRo" firstAttribute="top" secondItem="zxf-mc-Gbv" secondAttribute="top" constant="15" id="ru7-Oq-Vw2"/>
+                    <constraint firstItem="s1C-Ss-RM3" firstAttribute="top" secondItem="P6I-6Y-5Eg" secondAttribute="topMargin" constant="135" id="shf-Kq-qk8"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="BUO-pT-9qj" secondAttribute="leading" id="tCA-Mb-qm3"/>
                     <constraint firstAttribute="bottomMargin" secondItem="s1C-Ss-RM3" secondAttribute="bottom" constant="20" id="vKr-NQ-zH4"/>
                     <constraint firstItem="MNa-kM-Muy" firstAttribute="leading" secondItem="EoY-Vd-ktl" secondAttribute="trailing" constant="8" id="vqg-GH-nMT"/>
                     <constraint firstAttribute="topMargin" secondItem="zxf-mc-Gbv" secondAttribute="top" constant="-20" id="wYM-mC-829"/>
+                    <constraint firstItem="ljr-Ct-4jR" firstAttribute="top" secondItem="zxf-mc-Gbv" secondAttribute="top" constant="25" id="xwl-eb-eke"/>
                     <constraint firstItem="s1C-Ss-RM3" firstAttribute="top" secondItem="P6I-6Y-5Eg" secondAttribute="topMargin" constant="37" id="xwv-ud-h8K"/>
                 </constraints>
                 <variation key="default">
                     <mask key="constraints">
+                        <exclude reference="Npa-eJ-x5m"/>
                         <exclude reference="WY1-3z-1RJ"/>
+                        <exclude reference="7Xy-Jp-JoK"/>
                         <exclude reference="Hu1-XF-Hd9"/>
                         <exclude reference="wYM-mC-829"/>
                         <exclude reference="746-l7-Qj5"/>
@@ -135,6 +140,7 @@
                         <exclude reference="oEb-Tx-hGz"/>
                         <exclude reference="qSQ-EG-OcI"/>
                         <exclude reference="xwv-ud-h8K"/>
+                        <exclude reference="OpX-8M-L8s"/>
                         <exclude reference="dKQ-wd-anN"/>
                         <exclude reference="ru7-Oq-Vw2"/>
                         <exclude reference="FaA-ZU-njA"/>
