@@ -15,6 +15,8 @@ class ListViewController: UIViewController {
 
     var friendships: [Friendship] = []
     var fullFriendshipList: [Friendship] = []
+    var friendshipsAnimated : [String] = []
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,30 +67,41 @@ extension ListViewController : UITableViewDelegate, UITableViewDataSource {
         let cell : FriendshipTableViewCell =
             self.tableView.dequeueReusableCellWithIdentifier("FriendshipCell", forIndexPath: indexPath) as! FriendshipTableViewCell
 
-        cell.configureFromFriendship(self.friendships[indexPath.row])
+        let friendship = self.friendships[indexPath.row]
+        cell.configureFromFriendship(friendship)
 
-        animateCell(cell)
+        animateCell(cell, friendship: friendship)
         return cell
     }
 
-    func animateCell(cell: FriendshipTableViewCell) {
-        cell.friendshipTypeImageView.alpha = 0.0
+    func animateCell(cell: FriendshipTableViewCell, friendship: Friendship) {
+        if self.friendshipsAnimated.contains(friendship.newFriend.name) {
+            cell.leftLinkLineWidthConstraint.constant = 100
+            cell.rightLinkLineWidthConstraint.constant = 100
+            cell.friendshipTypeImageView.alpha = 1.0
+        } else {
+            self.friendshipsAnimated.append(friendship.newFriend.name)
+            cell.leftLinkLineWidthConstraint.constant = 0
+            cell.rightLinkLineWidthConstraint.constant = 0
+            cell.friendshipTypeImageView.alpha = 0.0
 
-        cell.contentView.layoutIfNeeded()
+            cell.contentView.layoutIfNeeded()
 
-        UIView.animateWithDuration(
-            1.5,
-            animations: {
-                cell.leftLinkLineWidthConstraint.constant = 100
-                cell.rightLinkLineWidthConstraint.constant = 100
-                cell.contentView.layoutIfNeeded()
-            },
-            completion: { _ in
-                UIView.animateWithDuration(0.25, animations: {
-                    cell.friendshipTypeImageView.alpha = 1.0
-                })
-            }
-        )
+            UIView.animateWithDuration(
+                1.5,
+                animations: {
+                    cell.leftLinkLineWidthConstraint.constant = 100
+                    cell.rightLinkLineWidthConstraint.constant = 100
+                    cell.contentView.layoutIfNeeded()
+                },
+                completion: { _ in
+                    UIView.animateWithDuration(0.25, animations: {
+                        cell.friendshipTypeImageView.alpha = 1.0
+                    })
+                }
+            )
+
+        }
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -100,6 +113,8 @@ extension ListViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         let cell : FriendshipTableViewCell =
             self.tableView.dequeueReusableCellWithIdentifier("FriendshipCell", forIndexPath: indexPath) as! FriendshipTableViewCell
+
+        // TODO: Animation doesn't work in here for some reason
 
     }
 }

@@ -57,9 +57,6 @@ class FriendshipTableViewCell: UITableViewCell {
         self.originalFriendName.text = friendship.oldFriend.name
         self.newFriendName.text = friendship.newFriend.name
 
-        self.leftLinkLineWidthConstraint.constant = 0
-        self.rightLinkLineWidthConstraint.constant = 0
-
 
         if let image = friendship.friendshipType?.image() {
             self.friendshipTypeImageView.image = image

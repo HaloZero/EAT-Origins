@@ -49,6 +49,7 @@ extension User : Decodable {
 }
 
 struct Friendship {
+    
     let oldFriend: User
     let newFriend: User
     let friendshipType: FriendshipType?
